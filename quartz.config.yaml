@@ -264,19 +264,6 @@ plugins:
       position: afterBody
       priority: 50
       display: all
-  - source:
-      name: quartz-themes
-      repo: github:saberzero1/quartz-themes
-      subdir: plugin
-      ref: main
-    enabled: true
-    order: 50
-    options:
-      theme: agate
-  - source: https://github.com/saberzero1/quartz-themes
-    enabled: true
-    order: 50
-    options: {}
 
 layout:
   groups:
