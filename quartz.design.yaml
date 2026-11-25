@@ -1,0 +1,349 @@
+# Quartz v5 · Brain Forest — Minimal Reading Edition
+# This is the design source. The deployment workflow copies it to quartz.config.yaml.
+configuration:
+  pageTitle: 系统神经科学
+  pageTitleSuffix: "· the Brain Forest"
+  enableSPA: true
+  enablePopovers: true
+  analytics:
+    provider: plausible
+  locale: zh-CN
+  baseUrl: 0-adab.github.io
+  ignorePatterns:
+    - private
+    - templates
+    - Templates
+    - .obsidian
+    - Excalidraw
+    - 03_Resources
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      title: Noto Serif SC
+      header: Noto Serif SC
+      body: Noto Sans SC
+      code: JetBrains Mono
+    colors:
+      lightMode:
+        light: "#FCFBF8"
+        lightgray: "#E6E8E1"
+        gray: "#A5B0AB"
+        darkgray: "#3F4A45"
+        dark: "#1B2823"
+        secondary: "#356C5B"
+        tertiary: "#6E9D86"
+        highlight: "rgba(53, 108, 91, 0.09)"
+        textHighlight: "#E9DDAA66"
+      darkMode:
+        light: "#151B18"
+        lightgray: "#29342E"
+        gray: "#6E7B72"
+        darkgray: "#C5CFC8"
+        dark: "#F3F5F0"
+        secondary: "#8EBD9F"
+        tertiary: "#B0D3B9"
+        highlight: "rgba(142, 189, 159, 0.14)"
+        textHighlight: "#D3BD7344"
+
+plugins:
+  - source: "@quartz-community/note-properties"
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - description
+        - tags
+        - aliases
+      excludedProperties: []
+      hidePropertiesView: true
+      delimiters: ---
+      language: yaml
+    order: 5
+    layout:
+      position: beforeBody
+      priority: 15
+      display: all
+
+  - source: "@quartz-community/created-modified-date"
+    enabled: true
+    options:
+      defaultDateType: modified
+      priority:
+        - frontmatter
+        - git
+        - filesystem
+    order: 10
+
+  - source: "@quartz-community/syntax-highlighting"
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
+
+  - source: "@quartz-community/obsidian-flavored-markdown"
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 30
+
+  - source: "@quartz-community/github-flavored-markdown"
+    enabled: true
+    order: 40
+
+  - source: "@quartz-community/table-of-contents"
+    enabled: true
+    order: 50
+    layout:
+      position: right
+      priority: 10
+
+  - source: "@quartz-community/crawl-links"
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
+
+  - source: "@quartz-community/description"
+    enabled: true
+    order: 70
+
+  - source: "@quartz-community/latex"
+    enabled: true
+    options:
+      renderEngine: katex
+    order: 80
+
+  - source: "@quartz-community/citations"
+    enabled: false
+    order: 85
+
+  - source: "@quartz-community/hard-line-breaks"
+    enabled: false
+    order: 90
+
+  - source: "@quartz-community/ox-hugo"
+    enabled: false
+    order: 91
+
+  - source: "@quartz-community/roam"
+    enabled: false
+    order: 92
+
+  - source: "@quartz-community/quartz-fonts"
+    enabled: true
+
+  - source: "@quartz-themes/core"
+    enabled: false
+    options:
+      theme: tokyo-night
+      mode: both
+
+  - source: "@quartz-community/remove-draft"
+    enabled: false
+
+  - source: "@quartz-community/explicit-publish"
+    enabled: true
+
+  - source: "@quartz-community/unlisted-pages"
+    enabled: true
+    options: {}
+    order: 45
+
+  - source: "@quartz-community/encrypted-pages"
+    enabled: false
+    options:
+      iterations: 600000
+      passwordField: password
+      unlistWhenEncrypted: false
+      outputPath: static/encryptedContentIndex.json
+    order: 900
+    layout:
+      position: body
+      priority: 100
+      display: all
+
+  - source: "@quartz-community/alias-redirects"
+    enabled: true
+
+  - source: "@quartz-community/content-index"
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: true
+
+  - source: "@quartz-community/favicon"
+    enabled: true
+
+  - source: "@quartz-community/og-image"
+    enabled: true
+
+  - source: "@quartz-community/cname"
+    enabled: false
+
+  - source: "@quartz-community/canvas-page"
+    enabled: true
+
+  - source: "@quartz-community/content-page"
+    enabled: true
+
+  - source: "@quartz-community/folder-page"
+    enabled: true
+
+  - source: "@quartz-community/tag-page"
+    enabled: true
+
+  - source: "@quartz-community/bases-page"
+    enabled: true
+    options: {}
+    order: 50
+
+  # Left: identity, search, reading controls and navigation.
+  - source: "@quartz-community/page-title"
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+
+  - source: "@quartz-community/search"
+    enabled: true
+    layout:
+      position: left
+      priority: 20
+      group: toolbar
+      groupOptions:
+        grow: true
+
+  - source: "@quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+
+  - source: "@quartz-community/reader-mode"
+    enabled: false
+    layout:
+      position: left
+      priority: 35
+      group: toolbar
+
+  - source: "@quartz-community/explorer"
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+
+  - source: "@quartz-community/spacer"
+    enabled: false
+    options: {}
+    order: 25
+    layout:
+      position: left
+      priority: 25
+      display: all
+
+  # Article heading: breadcrumbs, title and a quiet metadata line.
+  - source: "@quartz-community/breadcrumbs"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+
+  - source: "@quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+      condition: not-index
+
+  - source: "@quartz-community/content-meta"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+
+  # Keep context available after the article instead of beside it.
+  - source: "@quartz-community/tag-list"
+    enabled: true
+    layout:
+      position: afterBody
+      priority: 20
+
+  - source: "@quartz-community/backlinks"
+    enabled: true
+    layout:
+      position: afterBody
+      priority: 30
+
+  # De-emphasize visual clutter.
+  - source: "@quartz-community/graph"
+    enabled: false
+    layout:
+      position: right
+      priority: 10
+
+  - source: "@quartz-community/recent-notes"
+    enabled: false
+    options:
+      limit: 5
+      showTags: false
+      linkToMore: false
+    layout:
+      priority: 60
+
+  - source: "@quartz-community/comments"
+    enabled: false
+    options:
+      provider: giscus
+      options: {}
+    layout:
+      position: afterBody
+      priority: 10
+
+  - source: "@quartz-community/footer"
+    enabled: false
+    options:
+      links:
+        GitHub: https://github.com/0-ADAB/0-ADAB.github.io
+        Powered by Quartz: https://quartz.jzhao.xyz
+    layout:
+      priority: 50
+
+  - source: "@quartz-community/stacked-pages"
+    enabled: false
+    layout:
+      position: afterBody
+      priority: 50
+      display: all
+
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    canvas: {}
+    bases: {}
+    content: {}

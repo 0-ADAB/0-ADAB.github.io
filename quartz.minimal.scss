@@ -1,0 +1,64 @@
+@use "./variables.scss" as *;
+
+// Brain Forest · quiet, editorial reading style.
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.page .center article {
+  font-size: 1.025rem;
+}
+
+.page .center article p,
+.page .center article li {
+  line-height: 1.85;
+}
+
+.page .center article p {
+  margin: 0.9rem 0 1.25rem;
+}
+
+.page .center article h1 {
+  line-height: 1.45;
+  letter-spacing: 0.015em;
+}
+
+.page .center article h2 {
+  margin-top: 2.4rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.page .center article h3 {
+  margin-top: 1.85rem;
+  line-height: 1.5;
+}
+
+.page .center article a.internal {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  text-decoration: underline;
+  text-decoration-color: var(--tertiary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.19em;
+}
+
+.page .center article blockquote {
+  border-left: 2px solid var(--tertiary);
+  background: var(--highlight);
+  border-radius: 0 8px 8px 0;
+  padding: 0.7rem 1.1rem;
+}
+
+.page .center article pre,
+.page .center article img {
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .page .center article {
+    font-size: 1rem;
+  }
+}
