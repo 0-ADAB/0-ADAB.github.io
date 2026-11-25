@@ -8,8 +8,7 @@ aliases:
   - VIP-expressing interneurons
 title: VIP中间神经元
 description: VIP中间神经元是一组以血管活性肠肽表达为分子标记、通常采用GABA能传递的异质性抑制神经元，可通过亚型及状态依赖的直接抑制与去抑制调节感觉、学习和局部网络活动。
-created: 2026-10-16T16:22:04.376+08:00
-modified: 2026-11-14T12:41:03.236+08:00
+created: 2026-10-16T08:22:04.376Z
 tags:
   - 类型/概念
   - 层/世界

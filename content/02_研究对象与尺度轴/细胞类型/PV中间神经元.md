@@ -7,8 +7,7 @@ aliases:
   - PVALB interneurons
 title: PV中间神经元
 description: PV中间神经元是一类通常以快放电与 GABA 能传递为特征、在靶向抑制、节律同步、感觉增益及可塑性中发挥区域和状态依赖作用的异质性神经元。
-created: 2026-10-16T15:55:56.336+08:00
-modified: 2026-11-14T12:41:03.233+08:00
+created: 2026-10-16T07:55:56.336Z
 tags:
   - 类型/概念
   - 层/世界

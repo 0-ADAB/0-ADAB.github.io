@@ -329,17 +329,17 @@ AMPA 受体拮抗剂可降低兴奋性传递，perampanel 也具有临床抗癫�
 
 ### 编辑审核与发布前检查
 
-- 保留模板 `type: concept`
-- `publish: false`
-- `axis: 研究对象与尺度`
-- `category: 分子与递质`
-- `review_status: needs_review`
-- 已区分原始研究、结构研究、综述和监管资料
-- 已加入支持证据与相互限制的 LTP 研究
-- 文献时间范围覆盖 1989–2026
-- 未根据不可见 Vault 创建未经验证的 Wikilink
-- **人工待查：** Vault 中是否已有“AMPA受体 / AMPAR / AMPA型谷氨酸受体”同义规范节点
-- **人工待查：** 候选相关节点是否真实存在且拟公开，确认后再补 Wikilink
-- **人工待查：** 是否需要把 GluA1、GluA2、CP-AMPAR、TARP 单独拆成更细节点
-- **人工待查：** 发布前再次核对 2026 年最新综述和天然复合物研究是否有勘误或后续修订
-- **人工发布：** 审核完成后再决定是否将 `publish` 改为 `true`
+- [x] 保留模板 `type: concept`
+- [x] `publish: false`
+- [x] `axis: 研究对象与尺度`
+- [x] `category: 分子与递质`
+- [x] `review_status: needs_review`
+- [x] 已区分原始研究、结构研究、综述和监管资料
+- [x] 已加入支持证据与相互限制的 LTP 研究
+- [x] 文献时间范围覆盖 1989–2026
+- [x] 未根据不可见 Vault 创建未经验证的 Wikilink
+- [ ] **人工待查：** Vault 中是否已有“AMPA受体 / AMPAR / AMPA型谷氨酸受体”同义规范节点
+- [ ] **人工待查：** 候选相关节点是否真实存在且拟公开，确认后再补 Wikilink
+- [ ] **人工待查：** 是否需要把 GluA1、GluA2、CP-AMPAR、TARP 单独拆成更细节点
+- [ ] **人工待查：** 发布前再次核对 2026 年最新综述和天然复合物研究是否有勘误或后续修订
+- [ ] **人工发布：** 审核完成后再决定是否将 `publish` 改为 `true`

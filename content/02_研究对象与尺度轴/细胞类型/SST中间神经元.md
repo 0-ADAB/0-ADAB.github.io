@@ -7,8 +7,7 @@ aliases:
   - Somatostatin-expressing interneurons
 title: SST中间神经元
 description: SST中间神经元是以生长抑素表达为标记的异质性抑制性神经元群体，通过亚型特异的树突与层间抑制、去抑制回路和状态依赖的突触调控参与神经信息处理。
-created: 2026-10-16T16:06:58.036+08:00
-modified: 2026-11-14T12:41:03.235+08:00
+created: 2026-10-16T08:06:58.036Z
 tags:
   - 类型/概念
   - 层/世界

@@ -7,8 +7,7 @@ aliases:
   - Alzheimer's disease functional MRI
 title: AD脑活动异常的多中心重复验证
 description: Grab-AD 汇总 6 个中心 688 人的静息态 fMRI：阿尔茨海默病在默认网络、基底节与扣带皮层活动降低，前额叶与海马活动升高；留一站点交叉验证下诊断分类 AUC 0.85、MMSE 预测 r=0.56。
-created: 2026-10-15T21:57:47.164+08:00
-modified: 2026-11-14T12:41:03.429+08:00
+created: 2026-10-15T13:57:47.164Z
 tags:
   - 类型/证据
   - 层/证据
