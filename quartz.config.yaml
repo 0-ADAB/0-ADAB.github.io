@@ -212,13 +212,12 @@ plugins:
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
-      position: beforeBody
+      position: afterBody
       priority: 5
       condition: not-index
   - source: "@quartz-community/article-title"
-    enabled: true
+    enabled: false
     layout:
-      position: body
       priority: 10
   - source: "@quartz-community/content-meta"
     enabled: true
