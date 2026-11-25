@@ -256,14 +256,14 @@ plugins:
       condition: not-index
 
   - source: "@quartz-community/article-title"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 10
       condition: not-index
 
   - source: "@quartz-community/content-meta"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 20
@@ -272,11 +272,11 @@ plugins:
   - source: "@quartz-community/tag-list"
     enabled: true
     layout:
-      position: afterBody
-      priority: 20
+      position: beforeBody
+      priority: 12
 
   - source: "@quartz-community/backlinks"
-    enabled: true
+    enabled: false
     layout:
       position: afterBody
       priority: 30
