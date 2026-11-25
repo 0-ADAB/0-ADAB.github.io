@@ -180,7 +180,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 20
+      priority: 10
       group: toolbar
       groupOptions:
         grow: true
@@ -223,7 +223,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 20
+      priority: 50
   - source: "@quartz-community/tag-list"
     enabled: true
     layout:
@@ -259,11 +259,19 @@ plugins:
     layout:
       priority: 50
   - source: "@quartz-community/stacked-pages"
-    enabled: false
+    enabled: true
     layout:
       position: afterBody
       priority: 50
       display: all
+  - source:
+      name: quartz-themes
+      repo: github:saberzero1/quartz-themes
+      subdir: plugin
+      ref: main
+    enabled: true
+    order: 50
+    options: {}
 
 layout:
   groups:
