@@ -40,8 +40,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+
       - name: Install Quartz plugins
-        run: npm run install-plugins
+        run: |
+          sed -i '/name: quartz-themes/,/enabled:/s/ref: main/ref: master/' quartz.config.yaml
+          npm run install-plugins
+  
 
       - name: Build Quartz
         run: node ./quartz/bootstrap-cli.mjs build
