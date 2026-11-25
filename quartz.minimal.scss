@@ -139,7 +139,7 @@ body {
 // Color and sizing tokens for this layer.
 @media screen and (min-width: 801px) and (hover: hover) and (pointer: fine) {
   .page[data-frame="default"] {
-    --bf-nav-height: 62px;
+    --bf-nav-height: 90px;
     --bf-drawer-width: min(180px, calc(100vw - 36px));
     --bf-drawer-handle: 26px;
     --bf-drawer-top: clamp(112px, 19vh, 188px);
@@ -207,7 +207,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--headerFont);
-    font-size: 1.02rem;
+    font-size: 1.8rem;
     font-weight: 650;
     line-height: 1.35;
     letter-spacing: 0.025em;
@@ -287,7 +287,7 @@ body {
     position: absolute;
     top: 0.8rem;
     right: 5px;
-    font-size: 0.72rem;
+    font-size: 1.3rem;
     line-height: 1.45;
     font-weight: 550;
     letter-spacing: 0.1em;
@@ -424,7 +424,7 @@ body {
     position: absolute;
     top: 0.8rem;
     left: 5px;
-    font-size: 0.72rem;
+    font-size: 1.3rem;
     line-height: 1.45;
     font-weight: 550;
     letter-spacing: 0.1em;
@@ -466,7 +466,7 @@ body {
 // Smooth native anchor navigation with fixed header clearance.
 @media screen and (min-width: 801px) and (hover: hover) and (pointer: fine) {
   html {
-    scroll-padding-top: 92px;
+    scroll-padding-top: 140px;
   }
 }
 
