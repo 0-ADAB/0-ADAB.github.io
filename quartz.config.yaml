@@ -199,7 +199,7 @@ plugins:
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
-      position: body
+      position: left
       priority: 10
   - source: "@quartz-community/spacer"
     enabled: true
