@@ -333,7 +333,7 @@ body {
     flex: 1 1 auto;
     min-height: 0;
     width: auto;
-    height: auto !important;
+    height: 100% !important;
     max-height: calc(100vh - var(--bf-drawer-top) - 96px);
     margin: 0;
     padding: 0.25rem 0;
