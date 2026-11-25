@@ -208,7 +208,7 @@ plugins:
     layout:
       position: left
       priority: 25
-      display: mobile-only
+      display: all
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
