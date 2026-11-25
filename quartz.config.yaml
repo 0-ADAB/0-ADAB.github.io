@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: 系统神经科学
-  pageTitleSuffix: · 0-ADAB
+  pageTitleSuffix: "· the Brain Forest "
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -199,7 +199,7 @@ plugins:
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
-      position: left
+      position: body
       priority: 10
   - source: "@quartz-community/spacer"
     enabled: true
@@ -218,12 +218,12 @@ plugins:
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
-      position: beforeBody
+      position: body
       priority: 10
   - source: "@quartz-community/content-meta"
     enabled: true
     layout:
-      position: beforeBody
+      position: left
       priority: 20
   - source: "@quartz-community/tag-list"
     enabled: true
@@ -242,7 +242,6 @@ plugins:
       showTags: false
       linkToMore: false
     layout:
-      position: right
       priority: 60
   - source: "@quartz-community/comments"
     enabled: true
@@ -253,13 +252,12 @@ plugins:
       position: afterBody
       priority: 10
   - source: "@quartz-community/footer"
-    enabled: true
+    enabled: false
     options:
       links:
         GitHub: https://github.com/0-ADAB/0-ADAB.github.io
         Powered by Quartz: https://quartz.jzhao.xyz
     layout:
-      position: footer
       priority: 50
   - source: "@quartz-community/stacked-pages"
     enabled: false
@@ -275,7 +273,7 @@ plugins:
     enabled: true
     order: 50
     options:
-      theme: catppuccin
+      theme: agate
 
 layout:
   groups:
@@ -289,8 +287,6 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content:
-      template: full-width
     folder:
       exclude:
         - reader-mode
@@ -299,3 +295,4 @@ layout:
         - reader-mode
     canvas: {}
     bases: {}
+    content: {}
