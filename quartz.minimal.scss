@@ -63,11 +63,7 @@ body {
   }
 }
 
-// Brain Forest v2 · Floating Explorer
-// Desktop: hover over the left Explorer title to reveal a lightweight floating file tree.
-// Mobile and touch devices continue using Quartz's native tap-to-open drawer.
-
-// Reading polish: quiet dividers, measured rhythm, and a restrained table of contents.
+// Comfortable long-form reading.
 .page .center article hr {
   border: 0;
   border-top: 1px solid var(--lightgray);
@@ -75,7 +71,7 @@ body {
 }
 
 .page .center article :is(h2, h3) {
-  scroll-margin-top: 2.5rem;
+  scroll-margin-top: 6.5rem;
 }
 
 .page .center article :is(a, button):focus-visible {
@@ -83,260 +79,6 @@ body {
   outline-offset: 3px;
   border-radius: 4px;
 }
-
-.page .sidebar.right .toc {
-  border-left: 1px solid var(--lightgray);
-  padding-left: 1rem;
-}
-
-.page .sidebar.right .toc a {
-  font-size: 0.92rem;
-  line-height: 1.75;
-  transition: color 160ms ease;
-}
-
-// Floating file browser; scope carefully so the article TOC is not affected.
-@media (min-width: 1201px) and (hover: hover) and (pointer: fine) {
-  .page #quartz-body .sidebar.left {
-    // The overlay must not be clipped by its parent.
-    overflow: visible;
-    z-index: 30;
-  }
-
-  .page #quartz-body .sidebar.left .explorer {
-    position: relative;
-    overflow: visible;
-    flex: 0 0 auto;
-    min-height: 0;
-  }
-
-  .page #quartz-body .sidebar.left .explorer > button.desktop-explorer {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 44px;
-    padding: 0.65rem 0.85rem;
-    border: 1px solid var(--lightgray);
-    border-radius: 12px;
-    background: var(--light);
-    color: var(--darkgray);
-    box-shadow: 0 2px 8px rgba(24, 42, 32, 0.035);
-    transition: border-color 180ms ease, background-color 180ms ease,
-      box-shadow 180ms ease;
-  }
-
-  .page #quartz-body .sidebar.left .explorer > button.desktop-explorer::before {
-    content: "";
-    display: block;
-    width: 3px;
-    height: 1rem;
-    flex: 0 0 3px;
-    margin-right: 0.65rem;
-    border-radius: 3px;
-    background: var(--tertiary);
-  }
-
-  .page #quartz-body .sidebar.left .explorer > button.desktop-explorer .fold {
-    margin-left: auto;
-  }
-
-  .page #quartz-body .sidebar.left .explorer:is(:hover, :focus-within) >
-    button.desktop-explorer {
-    border-color: var(--gray);
-    background: var(--highlight);
-    box-shadow: 0 7px 18px rgba(24, 42, 32, 0.055);
-  }
-
-  .page #quartz-body .sidebar.left .explorer > .explorer-content {
-    box-sizing: border-box;
-    position: absolute;
-    top: calc(100% - 2px); // no hover gap between trigger and floating panel
-    left: 0;
-    z-index: 60;
-    width: clamp(255px, 24vw, 345px);
-    max-width: calc(100vw - 32px);
-    height: auto !important; // override native collapsed explorer height
-    max-height: min(70vh, 640px);
-    margin: 0;
-    padding: 0.7rem;
-    overflow: auto;
-    overscroll-behavior: contain;
-    border: 1px solid var(--lightgray);
-    border-radius: 0 14px 14px 14px;
-    background: var(--light);
-    box-shadow: 0 22px 56px rgba(21, 43, 33, 0.16),
-      0 5px 14px rgba(21, 43, 33, 0.055);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateY(-7px);
-    transition: opacity 160ms ease, transform 180ms ease,
-      visibility 180ms ease;
-  }
-
-  .page #quartz-body .sidebar.left .explorer:is(:hover, :focus-within) >
-    .explorer-content {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0);
-  }
-
-  .page #quartz-body .sidebar.left .explorer-content :is(
-      .folder-container,
-      .nav-file-title
-    ) {
-    box-sizing: border-box;
-    border-radius: 8px;
-    padding: 0.35rem 0.5rem;
-    transition: background-color 140ms ease;
-  }
-
-  .page #quartz-body .sidebar.left .explorer-content :is(
-      .folder-container,
-      .nav-file-title
-    ):hover {
-    background: var(--highlight);
-  }
-
-  .page #quartz-body .sidebar.left .explorer-content .nav-file-title.active {
-    color: var(--secondary);
-    font-weight: 650;
-    opacity: 1;
-  }
-
-  .page #quartz-body .sidebar.left .explorer-content::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .page #quartz-body .sidebar.left .explorer-content::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background: var(--lightgray);
-    border: 2px solid var(--light);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .page #quartz-body .sidebar.left .explorer > .explorer-content,
-  .page #quartz-body .sidebar.left .explorer > button.desktop-explorer {
-    transition: none;
-  }
-}
-
-// Brain Forest v3 · Immersive two-sided navigation
-// Right: a slim "本页目录" rail that slides left on hover or keyboard focus.
-// Left: the Explorer floating panel from v2 remains intact.
-// No custom JS. Tablet, touch, and small screens keep Quartz's native navigation.
-
-@media screen and (min-width: 1201px) and (hover: hover) and (pointer: fine) {
-  // Quartz v5 normally reserves 320px on *both* sides.
-  // Keep the site identity/search usable but return right-side space to reading.
-  .page > #quartz-body {
-    grid-template-columns: clamp(232px, 20vw, 286px) minmax(0, 1fr) 62px;
-  }
-
-  .page #quartz-body .sidebar.left {
-    box-sizing: border-box;
-    padding-left: clamp(16px, 1.8vw, 26px);
-    padding-right: 12px;
-    z-index: 50;
-    overflow: visible;
-  }
-
-  .page #quartz-body .sidebar.right {
-    padding-left: 0;
-    padding-right: 0;
-    overflow: visible;
-    z-index: 45;
-    pointer-events: none;
-  }
-
-  // The TOC itself is the hover target; a 46px tab always stays visible.
-  // Moving across the handle and inside the panel does not close it.
-  .page #quartz-body .sidebar.right > .toc {
-    --bf-toc-handle: 46px;
-    --bf-toc-width: min(320px, calc(100vw - 48px));
-
-    box-sizing: border-box;
-    position: fixed;
-    top: clamp(92px, 20vh, 200px);
-    right: 0;
-    z-index: 46;
-    display: flex;
-    flex-direction: column;
-    width: var(--bf-toc-width);
-    height: auto;
-    max-height: min(72vh, 690px);
-    margin: 0;
-    padding: 1.15rem 1.1rem 1.2rem calc(var(--bf-toc-handle) + 0.65rem);
-    overflow-x: hidden;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    border: 1px solid var(--lightgray);
-    border-right: 0;
-    border-left: 3px solid var(--tertiary);
-    border-radius: 15px 0 0 15px;
-    background: var(--light);
-    box-shadow: -7px 8px 24px rgba(28, 47, 38, 0.06);
-    transform: translateX(calc(100% - var(--bf-toc-handle)));
-    transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
-      box-shadow 240ms ease;
-    pointer-events: auto;
-  }
-
-  // Vertical title remains legible even when the panel is retracted.
-  .page #quartz-body .sidebar.right > .toc::before {
-    content: "本页目录";
-    position: absolute;
-    top: 1rem;
-    left: 11px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    letter-spacing: 0.17em;
-    font-size: 0.78rem;
-    font-weight: 650;
-    color: var(--secondary);
-    white-space: nowrap;
-    pointer-events: none;
-  }
-
-  .page #quartz-body .sidebar.right > .toc:is(:hover, :focus-within) {
-    transform: translateX(0);
-    box-shadow: -20px 20px 52px rgba(28, 47, 38, 0.14);
-  }
-
-  // Soft interaction states, without forcing a particular TOC layout variant.
-  .page #quartz-body .sidebar.right > .toc a {
-    line-height: 1.7;
-    text-decoration: none;
-    transition: color 160ms ease;
-  }
-
-  .page #quartz-body .sidebar.right > .toc a:hover,
-  .page #quartz-body .sidebar.right > .toc a:focus-visible {
-    color: var(--secondary);
-  }
-
-  .page #quartz-body .sidebar.right > .toc a:focus-visible {
-    outline: 2px solid var(--tertiary);
-    outline-offset: 2px;
-    border-radius: 4px;
-  }
-
-  // Give the article a bit more air in the newly recovered space.
-  .page #quartz-body .center {
-    min-width: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .page #quartz-body .sidebar.right > .toc,
-  .page #quartz-body .sidebar.right > .toc a {
-    transition: none;
-  }
-}
-
 
 // Brain Forest Final · Compact tags above the article
 // TagList is positioned in beforeBody by quartz.design.yaml.
@@ -383,6 +125,335 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .page #quartz-body .center .tags a,
   .page #quartz-body .center .tag-list a {
+    transition: none;
+  }
+}
+
+// Brain Forest V4 · full-width immersive reading
+// Header: fixed horizontal navigation with native title, search and dark mode.
+// Both sides: horizontal hover drawers; no permanent side columns.
+// IMPORTANT: avoid transform/backdrop-filter on the toolbar's ancestor;
+// the Search plugin's fixed modal must remain viewport-relative.
+
+@media screen and (min-width: 801px) and (hover: hover) and (pointer: fine) {
+  .page[data-frame="default"] {
+    max-width: none;
+    width: 100%;
+  }
+
+  // Eliminate the layout tracks themselves, not merely the visible widgets.
+  .page[data-frame="default"] > #quartz-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "bf-main";
+    column-gap: 0;
+    row-gap: 0;
+    padding: 0;
+  }
+
+  .page[data-frame="default"] > #quartz-body > .center {
+    grid-area: bf-main;
+    box-sizing: border-box;
+    width: min(100% - 5.25rem, 900px);
+    min-width: 0;
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
+  .page[data-frame="default"] .center .page-header {
+    margin: 6.1rem 0 0;
+  }
+
+  // Floating horizontal toolbar.  No transform or backdrop-filter:
+  // search dialogs can still use the viewport as their containing block.
+  .page[data-frame="default"] .center .page-header > header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 13px;
+    left: max(50px, calc((100vw - 810px) / 2));
+    right: max(50px, calc((100vw - 810px) / 2));
+    z-index: 100;
+    min-height: 55px;
+    margin: 0;
+    padding: 0.45rem 0.8rem 0.45rem 1.2rem;
+    gap: 1rem;
+    overflow: visible;
+    border: 1px solid var(--lightgray);
+    border-radius: 999px;
+    background: var(--light);
+    box-shadow: 0 7px 26px rgba(22, 40, 32, 0.09);
+  }
+
+  .page[data-frame="default"] .center .page-header > header :is(h1, h2) {
+    flex: 0 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.96rem;
+    font-weight: 650;
+    line-height: 1.5;
+  }
+
+  .page[data-frame="default"] .center .page-header > header :is(h1, h2) a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+  .page[data-frame="default"] .center .page-header > header > .flex-component {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 0.55rem;
+    margin-left: auto;
+    min-width: 0;
+  }
+
+  .page[data-frame="default"] .center .page-header > header :is(
+      .search,
+      .darkmode
+    ) {
+    margin: 0;
+  }
+
+  .page[data-frame="default"] .center .page-header > header :is(
+      button,
+      .search-button
+    ):focus-visible {
+    outline: 2px solid var(--tertiary);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  // Left drawer: native Explorer is the *only* remaining left-slot component.
+  // Sliding the whole sidebar is more robust than positioning its internal list.
+  .page[data-frame="default"] > #quartz-body > .sidebar.left {
+    --bf-side-handle: 44px;
+    box-sizing: border-box;
+    grid-area: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: clamp(108px, 18vh, 185px);
+    left: 0;
+    right: auto;
+    z-index: 85;
+    width: min(330px, calc(100vw - 48px));
+    height: auto;
+    max-height: min(76vh, 680px);
+    margin: 0;
+    padding: 1.2rem calc(var(--bf-side-handle) + 0.65rem) 1rem 1.2rem;
+    gap: 0;
+    overflow: visible;
+    border: 1px solid var(--lightgray);
+    border-left: 0;
+    border-right: 3px solid var(--tertiary);
+    border-radius: 0 16px 16px 0;
+    background: var(--light);
+    box-shadow: 9px 10px 30px rgba(22, 40, 32, 0.07);
+    transform: translateX(calc(-100% + var(--bf-side-handle)));
+    transition: transform 230ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 230ms ease;
+  }
+
+  .page[data-frame="default"] > #quartz-body > .sidebar.left::after {
+    content: "文件目录";
+    position: absolute;
+    right: 12px;
+    top: 1.05rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.15em;
+    font-size: 0.78rem;
+    font-weight: 650;
+    line-height: 1.5;
+    white-space: nowrap;
+    color: var(--secondary);
+    pointer-events: none;
+  }
+
+  .page[data-frame="default"] > #quartz-body > .sidebar.left:is(
+      :hover,
+      :focus-within
+    ) {
+    transform: translateX(0);
+    box-shadow: 18px 20px 55px rgba(22, 40, 32, 0.15);
+  }
+
+  .page[data-frame="default"] .sidebar.left .explorer {
+    min-width: 0;
+    min-height: 0;
+    max-height: min(67vh, 600px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .page[data-frame="default"] .sidebar.left .explorer > button.desktop-explorer {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    min-height: 40px;
+    padding: 0.4rem 0.45rem;
+    color: var(--dark);
+    cursor: pointer;
+  }
+
+  .page[data-frame="default"] .sidebar.left .explorer > .explorer-content {
+    box-sizing: border-box;
+    position: static;
+    display: block;
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto !important;
+    max-height: min(60vh, 560px);
+    width: auto;
+    margin: 0;
+    padding: 0.25rem 0 0.35rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray) transparent;
+  }
+
+  .page[data-frame="default"] .sidebar.left .explorer-content :is(
+      .folder-container,
+      .nav-file-title
+    ) {
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0.3rem 0.4rem;
+    transition: background-color 140ms ease;
+  }
+
+  .page[data-frame="default"] .sidebar.left .explorer-content :is(
+      .folder-container,
+      .nav-file-title
+    ):hover {
+    background: var(--highlight);
+  }
+
+  // Right drawer: the chapter TOC mirrors the left, but slides from the right.
+  .page[data-frame="default"] > #quartz-body > .sidebar.right {
+    grid-area: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 80;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    display: block;
+    pointer-events: none;
+  }
+
+  .page[data-frame="default"] > #quartz-body > .sidebar.right > .toc {
+    --bf-side-handle: 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: clamp(108px, 18vh, 185px);
+    right: 0;
+    left: auto;
+    z-index: 81;
+    width: min(330px, calc(100vw - 48px));
+    height: auto;
+    max-height: min(76vh, 680px);
+    min-width: 0;
+    margin: 0;
+    padding: 1.2rem 1.1rem 1.2rem calc(var(--bf-side-handle) + 0.65rem);
+    gap: 0.35rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border: 1px solid var(--lightgray);
+    border-right: 0;
+    border-left: 3px solid var(--tertiary);
+    border-radius: 16px 0 0 16px;
+    background: var(--light);
+    box-shadow: -9px 10px 30px rgba(22, 40, 32, 0.07);
+    transform: translateX(calc(100% - var(--bf-side-handle)));
+    transition: transform 230ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 230ms ease;
+    pointer-events: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray) transparent;
+  }
+
+  .page[data-frame="default"] > #quartz-body > .sidebar.right > .toc::before {
+    content: "本页目录";
+    position: absolute;
+    top: 1.05rem;
+    left: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.15em;
+    font-size: 0.78rem;
+    font-weight: 650;
+    line-height: 1.5;
+    white-space: nowrap;
+    color: var(--secondary);
+    pointer-events: none;
+  }
+
+  .page[data-frame="default"] > #quartz-body > .sidebar.right > .toc:is(
+      :hover,
+      :focus-within
+    ) {
+    transform: translateX(0);
+    box-shadow: -18px 20px 55px rgba(22, 40, 32, 0.15);
+  }
+
+  .page[data-frame="default"] .sidebar.right .toc a {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+
+  .page[data-frame="default"] .sidebar.right .toc a:hover,
+  .page[data-frame="default"] .sidebar.right .toc a:focus-visible {
+    color: var(--secondary);
+  }
+
+  .page[data-frame="default"] .sidebar.right .toc a:focus-visible {
+    outline: 2px solid var(--tertiary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  // Anchor targets stay visible below the fixed top toolbar.
+  html {
+    scroll-padding-top: 6.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page[data-frame="default"] > #quartz-body > .sidebar.left,
+  .page[data-frame="default"] > #quartz-body > .sidebar.right > .toc,
+  .page[data-frame="default"] .sidebar.left .explorer-content :is(
+      .folder-container,
+      .nav-file-title
+    ) {
     transition: none;
   }
 }
