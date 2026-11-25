@@ -266,13 +266,17 @@ plugins:
       display: all
   - source:
       name: quartz-themes
-      repo: "https://github.com/saberzero1/quartz-themes.git"
+      repo: github:saberzero1/quartz-themes
       subdir: plugin
-      ref: master
+      ref: main
     enabled: true
     order: 50
     options:
       theme: agate
+  - source: https://github.com/saberzero1/quartz-themes
+    enabled: true
+    order: 50
+    options: {}
 
 layout:
   groups:
