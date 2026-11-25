@@ -39,6 +39,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        
+      - name: Apply Brain Forest design
+        run: |
+          cp quartz.design.yaml quartz.config.yaml
+          cp quartz.minimal.scss quartz/styles/custom.scss
 
 
       - name: Install Quartz plugins
