@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: 神经科学笔记
+  pageTitle: 系统神经科学
   pageTitleSuffix: · 0-ADAB
   enableSPA: true
   enablePopovers: true
