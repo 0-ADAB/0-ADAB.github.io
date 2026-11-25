@@ -129,19 +129,26 @@ body {
   }
 }
 
-// Brain Forest V4 · full-width immersive reading
-// Header: fixed horizontal navigation with native title, search and dark mode.
-// Both sides: horizontal hover drawers; no permanent side columns.
-// IMPORTANT: avoid transform/backdrop-filter on the toolbar's ancestor;
-// the Search plugin's fixed modal must remain viewport-relative.
+// Brain Forest V5 · seamless reading shell
+// At >= 801px with a precise mouse:
+// - a full-bleed, flat, fixed site header (not a floating card);
+// - matching 180px left/right hover drawers with 1px hairline borders;
+// - centered content with no persistent sidebar columns.
+// Touch/mobile keep Quartz's native controls and layout.
 
+// Color and sizing tokens for this layer.
 @media screen and (min-width: 801px) and (hover: hover) and (pointer: fine) {
   .page[data-frame="default"] {
-    max-width: none;
+    --bf-nav-height: 62px;
+    --bf-drawer-width: min(180px, calc(100vw - 36px));
+    --bf-drawer-handle: 26px;
+    --bf-drawer-top: clamp(112px, 19vh, 188px);
     width: 100%;
+    max-width: none;
+    margin: 0;
   }
 
-  // Eliminate the layout tracks themselves, not merely the visible widgets.
+  // Free the full page width instead of merely hiding sidebar contents.
   .page[data-frame="default"] > #quartz-body {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
@@ -153,20 +160,24 @@ body {
   }
 
   .page[data-frame="default"] > #quartz-body > .center {
-    grid-area: bf-main;
     box-sizing: border-box;
-    width: min(100% - 5.25rem, 900px);
-    min-width: 0;
+    grid-area: bf-main;
+    width: min(calc(100% - 5.5rem), 900px);
     max-width: 900px;
-    margin-inline: auto;
+    min-width: 0;
+    margin: 0 auto;
   }
 
-  .page[data-frame="default"] .center .page-header {
-    margin: 6.1rem 0 0;
+  // Reserve real vertical space inside the article flow for the fixed bar.
+  .page[data-frame="default"] .center > .page-header {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: calc(var(--bf-nav-height) + 26px);
   }
 
-  // Floating horizontal toolbar.  No transform or backdrop-filter:
-  // search dialogs can still use the viewport as their containing block.
+  // Seamless top bar: a full-width strip with the same page background.
+  // Fixed for scroll persistence, visually continuous with the document.
+  // Avoid transforms/backdrop filters: Quartz Search uses an overlay.
   .page[data-frame="default"] .center .page-header > header {
     box-sizing: border-box;
     display: flex;
@@ -174,32 +185,34 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 13px;
-    left: max(50px, calc((100vw - 810px) / 2));
-    right: max(50px, calc((100vw - 810px) / 2));
-    z-index: 100;
-    min-height: 55px;
+    inset: 0 0 auto 0;
+    width: 100%;
+    min-height: var(--bf-nav-height);
     margin: 0;
-    padding: 0.45rem 0.8rem 0.45rem 1.2rem;
-    gap: 1rem;
-    overflow: visible;
-    border: 1px solid var(--lightgray);
-    border-radius: 999px;
+    padding: 0 clamp(18px, 3vw, 50px);
+    gap: 1.2rem;
+    z-index: 100;
+    border: none;
+    border-bottom: 1px solid var(--lightgray);
+    border-radius: 0;
     background: var(--light);
-    box-shadow: 0 7px 26px rgba(22, 40, 32, 0.09);
+    box-shadow: none;
+    transform: none;
   }
 
   .page[data-frame="default"] .center .page-header > header :is(h1, h2) {
     flex: 0 1 auto;
     min-width: 0;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    font-family: var(--headerFont);
+    font-size: 1.02rem;
+    font-weight: 650;
+    line-height: 1.35;
+    letter-spacing: 0.025em;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 0.96rem;
-    font-weight: 650;
-    line-height: 1.5;
   }
 
   .page[data-frame="default"] .center .page-header > header :is(h1, h2) a {
@@ -209,10 +222,11 @@ body {
 
   .page[data-frame="default"] .center .page-header > header > .flex-component {
     display: flex;
-    flex: 0 0 auto;
     align-items: center;
-    gap: 0.55rem;
+    justify-content: flex-end;
+    flex: 0 0 auto;
     margin-left: auto;
+    gap: 0.75rem;
     min-width: 0;
   }
 
@@ -223,57 +237,62 @@ body {
     margin: 0;
   }
 
+  // Small, quiet hover states instead of bordered control cards.
+  .page[data-frame="default"] .center .page-header > header :is(
+      button,
+      .search-button
+    ) {
+    border-color: transparent;
+    box-shadow: none;
+  }
+
   .page[data-frame="default"] .center .page-header > header :is(
       button,
       .search-button
     ):focus-visible {
     outline: 2px solid var(--tertiary);
-    outline-offset: 2px;
-    border-radius: 6px;
+    outline-offset: 3px;
+    border-radius: 5px;
   }
 
-  // Left drawer: native Explorer is the *only* remaining left-slot component.
-  // Sliding the whole sidebar is more robust than positioning its internal list.
+  // Left: compact horizontal hover drawer, 180px wide.
   .page[data-frame="default"] > #quartz-body > .sidebar.left {
-    --bf-side-handle: 44px;
     box-sizing: border-box;
     grid-area: auto;
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: clamp(108px, 18vh, 185px);
+    top: var(--bf-drawer-top);
     left: 0;
     right: auto;
-    z-index: 85;
-    width: min(330px, calc(100vw - 48px));
+    z-index: 80;
+    width: var(--bf-drawer-width);
     height: auto;
-    max-height: min(76vh, 680px);
+    max-height: min(72vh, 610px);
     margin: 0;
-    padding: 1.2rem calc(var(--bf-side-handle) + 0.65rem) 1rem 1.2rem;
+    padding: 0.9rem calc(var(--bf-drawer-handle) + 0.35rem) 0.9rem 0.65rem;
     gap: 0;
     overflow: visible;
     border: 1px solid var(--lightgray);
     border-left: 0;
-    border-right: 3px solid var(--tertiary);
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 9px 9px 0;
     background: var(--light);
-    box-shadow: 9px 10px 30px rgba(22, 40, 32, 0.07);
-    transform: translateX(calc(-100% + var(--bf-side-handle)));
-    transition: transform 230ms cubic-bezier(0.22, 1, 0.36, 1),
-      box-shadow 230ms ease;
+    box-shadow: 4px 7px 17px rgba(24, 45, 33, 0.045);
+    transform: translateX(calc(-100% + var(--bf-drawer-handle)));
+    transition: transform 200ms ease, box-shadow 200ms ease;
   }
 
   .page[data-frame="default"] > #quartz-body > .sidebar.left::after {
     content: "文件目录";
     position: absolute;
-    right: 12px;
-    top: 1.05rem;
+    top: 0.8rem;
+    right: 5px;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    font-weight: 550;
+    letter-spacing: 0.1em;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    letter-spacing: 0.15em;
-    font-size: 0.78rem;
-    font-weight: 650;
-    line-height: 1.5;
     white-space: nowrap;
     color: var(--secondary);
     pointer-events: none;
@@ -284,50 +303,51 @@ body {
       :focus-within
     ) {
     transform: translateX(0);
-    box-shadow: 18px 20px 55px rgba(22, 40, 32, 0.15);
+    box-shadow: 8px 12px 26px rgba(24, 45, 33, 0.09);
   }
 
   .page[data-frame="default"] .sidebar.left .explorer {
-    min-width: 0;
-    min-height: 0;
-    max-height: min(67vh, 600px);
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    max-height: min(64vh, 550px);
     overflow: hidden;
   }
 
   .page[data-frame="default"] .sidebar.left .explorer > button.desktop-explorer {
     display: flex;
-    flex: 0 0 auto;
     align-items: center;
-    min-height: 40px;
-    padding: 0.4rem 0.45rem;
+    flex: 0 0 auto;
+    min-height: 34px;
+    padding: 0.25rem 0.2rem;
     color: var(--dark);
-    cursor: pointer;
+    font-size: 0.85rem;
   }
 
   .page[data-frame="default"] .sidebar.left .explorer > .explorer-content {
     box-sizing: border-box;
-    position: static;
     display: block;
+    position: static;
     flex: 1 1 auto;
     min-height: 0;
-    height: auto !important;
-    max-height: min(60vh, 560px);
     width: auto;
+    height: auto !important;
+    max-height: min(59vh, 500px);
     margin: 0;
-    padding: 0.25rem 0 0.35rem;
+    padding: 0.25rem 0;
     overflow-x: hidden;
     overflow-y: auto;
     overscroll-behavior: contain;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: none;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
     scrollbar-width: thin;
     scrollbar-color: var(--gray) transparent;
   }
@@ -337,9 +357,11 @@ body {
       .nav-file-title
     ) {
     box-sizing: border-box;
-    border-radius: 8px;
-    padding: 0.3rem 0.4rem;
-    transition: background-color 140ms ease;
+    border-radius: 5px;
+    padding: 0.2rem 0.2rem;
+    font-size: 0.83rem;
+    overflow-wrap: anywhere;
+    transition: background-color 130ms ease;
   }
 
   .page[data-frame="default"] .sidebar.left .explorer-content :is(
@@ -349,51 +371,49 @@ body {
     background: var(--highlight);
   }
 
-  // Right drawer: the chapter TOC mirrors the left, but slides from the right.
+  // Right: symmetrical 180px drawer. The native TOC remains interactive.
   .page[data-frame="default"] > #quartz-body > .sidebar.right {
+    box-sizing: border-box;
     grid-area: auto;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 80;
+    z-index: 79;
+    display: block;
     width: 0;
     height: 0;
     margin: 0;
     padding: 0;
     overflow: visible;
-    display: block;
     pointer-events: none;
   }
 
   .page[data-frame="default"] > #quartz-body > .sidebar.right > .toc {
-    --bf-side-handle: 44px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: clamp(108px, 18vh, 185px);
+    top: var(--bf-drawer-top);
     right: 0;
     left: auto;
-    z-index: 81;
-    width: min(330px, calc(100vw - 48px));
+    z-index: 80;
+    width: var(--bf-drawer-width);
     height: auto;
-    max-height: min(76vh, 680px);
+    max-height: min(72vh, 610px);
     min-width: 0;
     margin: 0;
-    padding: 1.2rem 1.1rem 1.2rem calc(var(--bf-side-handle) + 0.65rem);
-    gap: 0.35rem;
+    padding: 0.9rem 0.65rem 0.9rem calc(var(--bf-drawer-handle) + 0.35rem);
+    gap: 0.3rem;
     overflow-x: hidden;
     overflow-y: auto;
     overscroll-behavior: contain;
     border: 1px solid var(--lightgray);
     border-right: 0;
-    border-left: 3px solid var(--tertiary);
-    border-radius: 16px 0 0 16px;
+    border-radius: 9px 0 0 9px;
     background: var(--light);
-    box-shadow: -9px 10px 30px rgba(22, 40, 32, 0.07);
-    transform: translateX(calc(100% - var(--bf-side-handle)));
-    transition: transform 230ms cubic-bezier(0.22, 1, 0.36, 1),
-      box-shadow 230ms ease;
+    box-shadow: -4px 7px 17px rgba(24, 45, 33, 0.045);
+    transform: translateX(calc(100% - var(--bf-drawer-handle)));
+    transition: transform 200ms ease, box-shadow 200ms ease;
     pointer-events: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--gray) transparent;
@@ -402,14 +422,14 @@ body {
   .page[data-frame="default"] > #quartz-body > .sidebar.right > .toc::before {
     content: "本页目录";
     position: absolute;
-    top: 1.05rem;
-    left: 12px;
+    top: 0.8rem;
+    left: 5px;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    font-weight: 550;
+    letter-spacing: 0.1em;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    letter-spacing: 0.15em;
-    font-size: 0.78rem;
-    font-weight: 650;
-    line-height: 1.5;
     white-space: nowrap;
     color: var(--secondary);
     pointer-events: none;
@@ -420,14 +440,15 @@ body {
       :focus-within
     ) {
     transform: translateX(0);
-    box-shadow: -18px 20px 55px rgba(22, 40, 32, 0.15);
+    box-shadow: -8px 12px 26px rgba(24, 45, 33, 0.09);
   }
 
   .page[data-frame="default"] .sidebar.right .toc a {
-    font-size: 0.92rem;
-    line-height: 1.7;
+    font-size: 0.83rem;
+    line-height: 1.65;
     text-decoration: none;
-    transition: color 160ms ease;
+    overflow-wrap: anywhere;
+    transition: color 140ms ease;
   }
 
   .page[data-frame="default"] .sidebar.right .toc a:hover,
@@ -436,14 +457,16 @@ body {
   }
 
   .page[data-frame="default"] .sidebar.right .toc a:focus-visible {
-    outline: 2px solid var(--tertiary);
+    outline: 1px solid var(--tertiary);
     outline-offset: 2px;
     border-radius: 4px;
   }
+}
 
-  // Anchor targets stay visible below the fixed top toolbar.
+// Smooth native anchor navigation with fixed header clearance.
+@media screen and (min-width: 801px) and (hover: hover) and (pointer: fine) {
   html {
-    scroll-padding-top: 6.5rem;
+    scroll-padding-top: 92px;
   }
 }
 
