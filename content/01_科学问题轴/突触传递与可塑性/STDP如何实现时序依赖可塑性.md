@@ -183,15 +183,11 @@ A\_+ e^{-\Delta t/\tau\_+}, & \Delta t>0\\
 
 ## 相关节点
 
-**已有文件名可见但尚未核实 Vault 落盘/发布状态：** AMPA受体、大脑如何选择动作、基底核如何参与动作选择与抑制。
-
 **候选科学问题节点：** 为什么突触活动会形成长时程增强或减弱、学习中的奖励延迟如何影响突触更新、发育关键期如何重塑皮层连接、时序可塑性如何改变神经元群体编码。
 
 **候选概念节点：** NMDA受体、树突棘、反向传播动作电位、CaMKII、内源性大麻素、长时程增强、长时程抑制、多巴胺、星形胶质细胞。
 
 **候选方法与模型节点：** 配对全细胞膜片钳、双光子钙成像、STDP学习窗口、三脉冲STDP模型、电压依赖可塑性模型、钙阈值模型、闭环光遗传。
-
-> 未提供完整 Vault 目录与实际发布清单，故一律使用普通文本候选；本稿没有创建未经证实存在性的 Obsidian Wikilink。
 
 ## 参考资料
 
@@ -243,11 +239,6 @@ A\_+ e^{-\Delta t/\tau\_+}, & \Delta t>0\\
 | (Vignoud et al., 2024, Commun Biol) | Vignoud G.; Venance L.; Touboul J. D. (2024). _Anti-Hebbian plasticity drives sequence learning in striatum_ | Commun Biol 7:555 | [DOI](https://doi.org/10.1038/s42003-024-06203-8) | 计算模型／逆 Hebb 规则 | 在模拟纹状体中逆 Hebb 规则可支持序列识别；没有直接证明体内行为通过该规则学得 |
 | (Itami & Kimura, 2025, Cells) | Itami C.; Kimura F. (2025). _Spike timing-dependent plasticity at layer 2/3 horizontal connections between neighboring columns during synapse formation before the critical period in the developing barrel cortex_ | Cells 14(18):1459 | [DOI](https://doi.org/10.3390/cells14181459) | 原始实验／2025 发育阶段例外 | 早期邻柱水平连接两种顺序可 all-LTP；分别有不同 NMDAR 依赖，单研究需独立复验 |
 
-### 科研编辑与人工审核说明
-
 - **来源性质：** 以经典原始论文、机制检验、不同脑区/物种验证、数学模型、领域综述和新近原始研究构成分层证据链。本稿不是全面数据库系统检索，也未量化总体重复成功率。
 - **特别核验：** 读者应优先复查每篇研究的 `Δt` 正负定义、配对频率/次数、突触类型、发育年龄，以及 LTP/LTD 究竟发生在突触前还是突触后。
 - **需跟踪的正式勘误：** Cassenaer & Laurent (2012, Nature) 后续更正了图 2f 的部分重复面板，DOI：[10.1038/nature11261](https://doi.org/10.1038/nature11261)；本文仍引用原研究并明确这一事项。
-- **分类差异：** 用户消息注明“01\_科学问题轴/运动与行动”，但当前上传模板的 `category: 突触传递与可塑性`。为遵守输入模板及主题语义，本稿保留后者；如需在“运动与行动”设交叉入口，应另由人工确认，不在这里擅自移动主文件。
-- **待人工验收：** 查重 STDP 的中文同义节点，校对新近 2024–2025 年论文的外推与后续独立验证、确认确实存在且拟公开的关联节点后再补双链。
-- **发布安全：** 初稿 `publish: false`、`review_status: needs_review`；未更改 Obsidian Vault、五轴主页、首页索引或发布配置。
