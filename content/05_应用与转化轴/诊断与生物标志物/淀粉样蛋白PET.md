@@ -155,8 +155,6 @@ Aβ阳性与未来认知变化在纵向群体研究中有关联，且低于经�
 
 ## 相关节点
 
-**候选关联（暂以普通文本列出，因未获取完整Vault目录且无法确认真实存在、规范路径和拟发布状态，不擅自生成未经验证的Obsidian双链）：**
-
 - 阿尔茨海默病：疾病生物学定义、临床阶段与共病鉴别。
 - β-淀粉样蛋白（Aβ）：聚集形态与淀粉样斑块机制。
 - Tau蛋白PET：缠结的示踪及与Aβ影像的互补预后价值。
@@ -207,11 +205,7 @@ Aβ阳性与未来认知变化在纵向群体研究中有关联，且低于经�
 | `(DailyMed, 2025, Kisunla Label)` | DailyMed/FDA — KISUNLA (donanemab-azbt) prescribing information | FDA/DailyMed；2025 年标签更新 | [原文入口](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=190352d4-ef62-4679-b4fa-e846e2766afa) | **抗 Aβ 药物监管说明书。** 治疗前需确认 Aβ 病理；考虑依据 PET 降低到最低水平停止给药；并需 MRI 监测 ARIA。 |
 | `(DailyMed, 2026, Leqembi Label)` | DailyMed/FDA — LEQEMBI (lecanemab-irmb) prescribing information | FDA/DailyMed；2026 年 7 月 21 日更新 | [原文入口](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9d1ff786-e577-410a-a273-c4d7d0e4e975) | **抗 Aβ 药物监管说明书。** 治疗前需确认 Aβ 病理与按标签 MRI/ARIA 监测；PET 是确认病理的一种选项，非所有患者唯一入口。 |
 
-### 证据边界及人工审核清单
-
 - **较稳定：** 多种PET示踪剂与病理斑块之间具有验证过的相关/判读效度；在特定认知障碍评估和治疗选择中有临床应用价值。(Clark et al., 2011, JAMA; Curtis et al., 2015, JAMA Neurol; Sabri et al., 2015, Alzheimers Dement; Rabinovici et al., 2025, Alzheimers Dement)
 - **临床关联但非强因果：** IDEAS/New IDEAS显示管理决策改变，未证明扫描本身必然带来长期健康改善。(Rabinovici et al., 2019, JAMA; Rabinovici et al., 2023, JAMA Neurol; Windon et al., 2025, Alzheimers Dement)
 - **研究活跃/需进一步验证：** 量化低阈值在单体预后和早期干预的泛化、跨产品CL转换、不同族群模型校准与长期患者中心结局。(Klunk et al., 2015, Alzheimers Dement; Farrell et al., 2021, Neurology; Ossenkoppele et al., 2021, JAMA Neurol; Bolton et al., 2026, Alzheimers Dement)
 - **优先人工核查：** （1）本地是否已有同名或“Aβ PET/淀粉样PET”节点；（2）实际使用示踪剂的最新版当地说明书、医保政策和扫描窗口；（3）2024生物学诊断与临床综合归因措辞；（4）抗Aβ治疗前MRI/ARIA监测要求；（5）审阅全部厂商资助及利益冲突，尤其勿将跨论文复用的IDEAS数据当独立重复。(Jack et al., 2024, Alzheimers Dement; Windon et al., 2025, Alzheimers Dement; Bolton et al., 2026, Alzheimers Dement; DailyMed, 2025, Amyvid Label; DailyMed, 2025, Kisunla Label; DailyMed, 2026, Leqembi Label)
-
-> **维护记录：** 截至2026-10-17的信息型研究初稿，需人工审核。保留 `publish: false`；文件仅供人工导入Obsidian，不代表已经写入、索引或发布。医学决策须结合具体患者、当地法规和现行说明书。

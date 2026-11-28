@@ -215,8 +215,6 @@ NEURON 为多区室膜电流模型提供仿真环境；NeuroML 提供模型描�
 
 ## 相关节点
 
-> **链接安全说明：** 当前只提供了本节点模板，未获得完整 Vault 文件树；以下均为**候选关联词（普通文本）**，不生成未经证实的 Obsidian 双链。人工确认同名文件存在且计划公开后，再添加带相对路径的 Obsidian 双链。
-
 - **实验技术**：电压钳、电流钳、膜片钳、巨轴突制备、动作电位记录、动态钳。
 - **模型与计算**：电缆理论、多区室模型、FitzHugh–Nagumo 模型、Morris–Lecar 模型、积分发放模型、Izhikevich 模型、神经元参数估计、贝叶斯推断、数值积分与灵敏度分析。
 - **分子、细胞与机制**：动作电位、电压门控钠通道、电压门控钾通道、Nav1.2／Nav1.6、轴突起始段、树突反向传播、膜电位、反转电位、门控电流、离子通道随机性。
@@ -273,9 +271,6 @@ NEURON 为多区室膜电流模型提供仿真环境；NeuroML 提供模型描�
 | `(Wells et al., 2024, PRX Life)` | S. A. Wells; J. D. Taylor; P. G. Morris; A. Nogaret (2024). _Inferring the Dynamics of Ionic Currents from Recursive Piecewise Data Assimilation of Approximate Neuron Models_ | PRX Life 2: 023007 | [doi:10.1103/PRXLife.2.023007](https://doi.org/10.1103/PRXLife.2.023007) | 模型误设／数据同化原始研究 | 显示结构误设时电流轨迹与参数推断可靠性不同；结论限于研究的模拟与生物记录设计。 |
 | `(Deistler et al., 2025, Nat Methods)` | M. Deistler; K. L. Kadhim; M. Pals; et al. (2025). _Jaxley: differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics_ | Nat Methods 22: 2649–2657 | [doi:10.1038/s41592-025-02895-w](https://doi.org/10.1038/s41592-025-02895-w) | 新型仿真／可微优化原始方法 | 加速大量生物物理参数和网络模型训练；计算示例不能证明机制唯一或外部可重复。 |
 
-### 证据分层与人工审核提醒
-
 - **较稳定的认识**：经典 Na⁺/K⁺ 电导变化能解释乌贼巨轴突动作电位的一批主要特征；电压依赖性门控和离散离子通道活动有跨技术支持。但原始参数、门控速率与电压符号约定须保持条件化(Hodgkin & Huxley, 1952d, J Physiol; Armstrong & Bezanilla, 1973, Nature; Neher & Sakmann, 1976, Nature)。
 - **重要限制或反例**：原始 HH 不包含许多哺乳动物神经元的通道种类、形态与噪声；不同参数可产生相似输出，尤其在模型结构指定不准确时不能把拟合解当唯一通道机制(Meunier & Segev, 2002, Trends Neurosci; Prinz et al., 2004, Nat Neurosci; Wells et al., 2024, PRX Life)。
 - **竞争性解释**：皮层动作电位起始看似陡峭，可由不同建模假说解释；不能凭一项波形特征认定特定分子协同机制(Naundorf et al., 2006, Nature; Brette, 2013, PLoS Comput Biol)。
-- **人工审核待办**：核对所在 Vault 是否已有“HH模型／Hodgkin–Huxley模型”等同义节点；确认是否将“电压钳”“电缆理论”“模型可识别性”另立节点；逐条抽查关键 DOI 和正文归因、教学参数版本、术语翻译。通过审核后，再由人工将 `review_status` 与 `publish` 改为相应状态，并按流程同步「03\_方法与模型轴」及需要更新的首页。**本文件只是初稿，不代表已写入 Vault 或发布。**

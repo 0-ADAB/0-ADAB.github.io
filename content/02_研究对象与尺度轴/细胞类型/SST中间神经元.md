@@ -185,8 +185,6 @@ VIP→SST 的抑制性连接、运动/行为状态相关的去抑制、SST→PV 
 
 ## 相关节点
 
-> **链接状态：** 当前只依据所提供的节点模板和此前对话中的主题名称整理候选关系，没有获得完整 Vault 目录树，也无法确认关联文件的公开状态；因此**以下均保持纯文本，不创建未经验证的 Obsidian 双链**。
-
 - **同轴细胞类型：** PV中间神经元；VIP中间神经元；Martinotti细胞；非 Martinotti SST 神经元；OLM中间神经元；锥体神经元；星形胶质细胞。
 - **分子与递质：** 生长抑素（SST）；GABA；GABA\_A受体；GABA\_B受体；SSTR受体家族；NMDA受体；乙酰胆碱；CHODL。
 - **神经通路与网络：** VIP–SST去抑制回路；树突抑制；周围抑制；皮层层间回路；γ振荡；神经血管外的局部微回路；视觉皮层；听觉皮层；海马CA1；长程皮层抑制通路。
@@ -239,10 +237,5 @@ VIP→SST 的抑制性连接、运动/行为状态相关的去抑制、SST→PV 
 | (Kato et al., 2017, Neuron) | Kato, H. K., Asinof, S. K. & Isaacson, J. S. (2017) — _Network-Level Control of Frequency Tuning in Auditory Cortex_ | Neuron 95: 412–423.e4 | [10.1016/j.neuron.2017.06.019](https://doi.org/10.1016/j.neuron.2017.06.019) | 原始研究·听皮层网络稳定性/音频调谐 | 特定小鼠 A1 SST 依赖的复发兴奋抑制使频率选择性增强；不代表所有侧抑制均经相同路径。 |
 | (Tripp et al., 2011, Neurobiol Dis) | Tripp, A., Kota, R. S., Lewis, D. A. & Sibille, E. (2011) — _Reduced somatostatin in subgenual anterior cingulate cortex in major depression_ | Neurobiol Dis 42: 116–124 | [10.1016/j.nbd.2011.01.014](https://doi.org/10.1016/j.nbd.2011.01.014) | 原始研究·人类尸检/表达关联 | 抑郁症 sgACC 的 SST 表达变化是关联指标，不能由表达下降断言细胞死亡或单向致病因果。 |
 
-### 版本、查证与人工审核说明
-
 - **核验范围：** 参考文献采用已查询的 PubMed、PMC、出版社与 eLife 官方记录中的正式题名、作者、刊物、年份及 DOI；范围涵盖经典细胞分类至 2026 年已发表研究。
 - **发表与更正提示：** Royer 等 2012 年 _Nat Neurosci_ 原文有后续勘误记录；人工引用时应按期刊最终修订版本核对。2025–2026 年的新机制及资源性文章**不应因发表新而被写成已获广泛独立重复**。
-- **未完成项：** 未获得完整 Vault 目录和关联节点发布状态；未执行系统评价、效应量荟萃分析、全部原始数据重算或跨实验室同协议重复实验。
-- **人工验收重点：** ① SST 标记 vs 神经肽效应；② Martinotti/非 Martinotti/长程群体定义；③ VIP–SST–PV 的不同直接连接与净网络读出；④ 2025 年学习范式对照的层次及刺激差异；⑤ 2026 年发育推断与睡眠激活的因果边界；⑥ 真正存在并准备发布的 Obsidian 节点。
-- **发布安全：** 仅为待审初稿，保留 `publish: false`、`core: false`、`review_status: needs_review`。由维护者审核并完成有效双链检查后，再决定发布和更新相应轴页面。

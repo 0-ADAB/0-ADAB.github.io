@@ -173,8 +173,6 @@ CA3爆发活动可推动CA1尖波相关群体事件，CA2也可参与触发，�
 
 ## 相关节点
 
-> 以下均为**纯文本关联候选**。虽然本次已收到CA3区模板，但没有完整Obsidian Vault目录及其公开状态，故不创建任何未经存在性验证的 Obsidian 双链。
-
 - **所属脑区与邻接：** 海马；齿状回；CA1区；CA2区；内嗅皮层；下托。
 - **输入与局部微回路：** 苔藓纤维；Schaffer侧支；穿通路；CA3锥体细胞；GABA能中间神经元；前馈抑制；反馈抑制；循环联络网络；近端—远端轴。
 - **分子与突触机制：** AMPA受体；NMDA受体；mGluR1；突触前释放；cAMP；Npas4；Kv1.2；LTP；LTD；短时易化；BTSP；固有兴奋性可塑性。
@@ -238,7 +236,3 @@ CA3爆发活动可推动CA1尖波相关群体事件，CA2也可参与触发，�
 | 49 | (Kesner, 2007, Learn Mem) | Kesner, R. P. (2007). _Behavioral functions of the CA3 subregion of the hippocampus_ | Learn Mem 14(11):771–781 | [DOI](https://doi.org/10.1101/lm.688207) | 行为综述 | CA3空间快速学习、线索恢复及短时记忆的证据汇总；不同损伤范式可不一致 |
 | 50 | (S. Leutgeb & J. K. Leutgeb, 2007, Learn Mem) | Leutgeb, S.; Leutgeb, J. K. (2007). _Pattern separation, pattern completion, and new neuronal codes within a continuous CA3 map_ | Learn Mem 14(11):745–757 | [DOI](https://doi.org/10.1101/lm.703907) | 概念／实验综述 | 解释模式分离与完成可在CA3依输入连续谱转换；非单一标准实验 |
 | 51 | (Oishi et al., 2019, Mol Brain) | Oishi, N.; Nomoto, M.; Ohkawa, N. et al. (2019). _Artificial association of memory events by optogenetic stimulation of hippocampal CA3 cell ensembles_ | Mol Brain 12:2 | [DOI](https://doi.org/10.1186/s13041-018-0424-1) | 原始小鼠光遗传／行为 | CA3群体共同激活可诱发人工情境联结；人工刺激充分性不证明自然情境必要性 |
-
-**人工验收优先项：**（1）确认本地是否已有“CA3 / 海马CA3”等同义节点；（2）检查CA3近远轴与CA2边界的本地解剖图谱；（3）复核2024年Cell和1998年J Neurosci勘误；（4）确认关联节点是否真实存在且拟公开后再补Wikilink；（5）科学内容审核通过后才由人工决定是否将`publish`设为`true`。
-
-**发布状态：** 本文件是研究型节点初稿；尚未写入Obsidian Vault，也未通过Quartz或其他同步流程公开。

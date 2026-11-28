@@ -1,22 +1,17 @@
 ---
 publish: true
-type: concept
-title: "GABAA受体"
-axis: 研究对象与尺度
-category: "分子与递质"
-core: false
-description: "GABA_A 受体是由不同亚基组装成的五聚体配体门控阴离子通道，其对神经元的抑制或去极化效应取决于离子梯度、受体亚型及回路状态。"
 aliases:
   - GABA_A受体
   - GABA_A receptor
   - GABAA receptor
   - γ-氨基丁酸A型受体
   - A型γ-氨基丁酸受体
+title: GABAA受体
+description: GABA_A 受体是由不同亚基组装成的五聚体配体门控阴离子通道，其对神经元的抑制或去极化效应取决于离子梯度、受体亚型及回路状态。
+created: 2026-10-15T06:09:46.033Z
 tags:
   - 类型/概念
   - 层/世界
-review_status: needs_review
-agent: "GPT-6"
 ---
 
 # GABAA受体
@@ -188,8 +183,6 @@ GABA\_A 受体在突触膜上不是永久静止的。抑制性突触支架 **gep
 
 ## 相关节点
 
-> **双链状态：** 当前仅提供节点模板，没有完整 Vault 目录和“已存在且拟公开”的文件清单；以下均为**普通文本候选**。不生成未核实的 Obsidian `Wikilink`，也不假定过去交付的 MD 已放入你的 Vault。
-
 - **分子与递质：** GABA、GABA\_B 受体、GABA\_A-ρ 受体、谷氨酸、AMPA 受体、NMDA 受体、苯二氮䓬类、神经活性甾体、别孕烯醇酮、gephyrin、GARLH4、neuroligin-2。
 - **离子与细胞机制：** 氯离子反转电位、碳酸氢根、KCC2、NKCC1、抑制性突触后电流、分流性抑制、突触外受体、持续性抑制、受体侧向扩散、受体脱敏、抑制性突触可塑性。
 - **神经回路与发育：** GABA 能中间神经元、前馈抑制、反馈抑制、去抑制、皮层兴奋抑制平衡、神经发育、海马 CA1、杏仁核、小脑颗粒细胞。
@@ -268,13 +261,3 @@ GABA\_A 受体在突触膜上不是永久静止的。抑制性突触支架 **gep
 - **离子稳态、发育期与人体转化：** (Kyrozis & Reichling, 1995, J Neurosci Methods; Ebihara et al., 1995, J Physiol; Staley et al., 1995, Science; Ben-Ari et al., 1989, J Physiol; Rivera et al., 1999, Nature; Kaila et al., 2014, Nat Rev Neurosci; Kirmse et al., 2015, Nat Commun; Dzhala et al., 2005, Nat Med; Pressler et al., 2015, Lancet Neurol)。必须并列读方法学、在体反例与 NEMO 安全结果。
 - **药理学与典型反证：** (Harrison & Simmonds, 1984, Brain Res; Hosie et al., 2006, Nature; Wallner et al., 2003, PNAS; Borghese et al., 2006, J Pharmacol Exp Ther; Rudolph et al., 1999, Nature; McKernan et al., 2000, Nat Neurosci; Löw et al., 2000, Science; Jurd et al., 2003, FASEB J)。低浓度乙醇的正、负结果为 (Wallner et al., 2003, PNAS) 与 (Borghese et al., 2006, J Pharmacol Exp Ther)；苯二氮䓬亚型敲入证据在 (Rudolph et al., 1999, Nature; McKernan et al., 2000, Nat Neurosci; Löw et al., 2000, Science)。
 - **遗传学、临床与监管：** (Homanics et al., 1997, PNAS; Baulac et al., 2001, Nat Genet; Wallace et al., 2001, Nat Genet; Epi4K Consortium et al, 2013, Nature; Buchanan et al., 2011, Biol Psychiatry; Deligiannidis et al., 2021, JAMA Psychiatry; Deligiannidis et al., 2023, Am J Psychiatry; US FDA, 2023, US FDA; US FDA, 2022, US FDA)。基因关联、随机试验和批准范围证据强度及目标问题不同，不可相互替代。
-
-### 人工验收与发布检查
-
-1. **全库查重：** 确认 `GABAA受体`、`GABA_A受体`、`γ-氨基丁酸A型受体` 是否已有规范节点。如果已有，应与既有页面比较并合并，而不是创建第二个规范文件。
-2. **关键核验：** 优先精读 (Sun et al., 2023, Nature; Zhou et al., 2025, Nature; Cowgill et al., 2026, Nat Commun) 的受体亚型组成和样本来源；(Kyrozis & Reichling, 1995, J Neurosci Methods; Ebihara et al., 1995, J Physiol; Staley et al., 1995, Science; Ben-Ari et al., 1989, J Physiol; Rivera et al., 1999, Nature; Kaila et al., 2014, Nat Rev Neurosci; Kirmse et al., 2015, Nat Commun; Dzhala et al., 2005, Nat Med; Pressler et al., 2015, Lancet Neurol) 的发育/在体/临床外推；(Wallner et al., 2003, PNAS; Borghese et al., 2006, J Pharmacol Exp Ther) 的独立复制分歧；(Buchanan et al., 2011, Biol Psychiatry) 的临床阴性结果。
-3. **双链审核：** 只对 Vault 中**真实存在且计划公开**的节点补 Wikilink；当前相关条目全部保留为普通文本。尤其不能凭过去完成过的 GABA、CREB、AMPA 受体文件就假定它们已公开。
-4. **药物资料：** 发布前复核具体国家/地区的药品监管状态与适应证；不能把 FDA 美国审批当作全球适应证。
-5. **人工发布：** 初稿 `publish: false`、`review_status: needs_review`。审核通过后，由维护者按实际规范更新审核状态，再自行将 `publish: true`，通过 Quartz Syncer 更新本节点、**02\_研究对象与尺度轴**及需要刷新的首页。
-
-**未完成／原因：** 未连接或写入完整 Obsidian Vault，故未完成全库文件同名/同义查重、双链存在性检查、`tools/检查森林.mjs`、网页部署或同步；未获取所有论文全文和原始数据进行逐图及效应量复算；未提供跨所有受体亚型的定量重复率。本文是需人工验收的证据节点初稿，**不能取代临床诊疗建议**。

@@ -214,13 +214,10 @@ tags:
 
 ## 相关节点
 
-**候选关联（普通文本；未验证 Obsidian Vault 中同名文件是否真实存在且拟公开，因此不创建 Wikilink）：**
-
 - **神经活动测量：** 功能磁共振成像（fMRI）、脑电图（EEG）、脑磁图（MEG）、双光子钙成像、细胞外电生理、全细胞膜片钳、局部场电位（LFP）。
 - **硬件与范式：** Neuropixels 1.0、Neuropixels 2.0、Neuropixels Ultra、Neuropixels Opto、光遗传学、光遗传标签（optotagging）、慢性植入。
 - **信号与分析：** 动作电位、spike sorting、Kilosort、SpikeInterface、神经元群体编码、交叉相关、运动漂移校正、时间同步、脑区配准。
 - **推断与证据质量：** 测量信度、可重复性、因果推断、伪重复、细胞类型识别、采样偏差。
-- **此前讨论的跨轴主题：** 边界细胞、中央执行网络；若要添加双链，须先核实 Vault 中对应节点、路径和公开计划。
 
 ## 参考资料
 
@@ -262,11 +259,4 @@ tags:
 | (Lakunina et al., 2026, Nat Methods) | Lakunina AA, Socha KZ, Ladd AE, et al. Neuropixels Opto: combining high-resolution electrophysiology and optogenetics. | Nat Methods 23:1207–1216 (2026) | [DOI](https://doi.org/10.1038/s41592-026-03076-z) | 原始原型／光电联合 | 同支探针联合记录、光激活和 optotagging；原型实验不等同于已普及的商用技术。 |
 | (Siegle & Steinmetz, 2026, Nat Rev Neurosci) | Siegle JH, Steinmetz NA. Large-scale electrophysiology at single-spike resolution. | Nat Rev Neurosci 27:395–415 (2026) | [DOI](https://doi.org/10.1038/s41583-026-01042-4) | 领域综述／设备及实践 | 比较大规模胞外记录平台、复现和共享挑战；为综合框架，不代替具体原始实验。 |
 
-### 待人工审核与发布前验收
-
-1. **硬件版本：** 用实际探针记录表核对本节点的 NP 1.0、NP 2.0、Ultra、NHP 与 Opto 分类。尤其注意 2026 年 Opto 的论文为原型研究，不能直接将其描述为所有实验室均可用的成熟商业产品。
-2. **实验设计：** 如果之后将本文作为实验 SOP 使用，须补充所在单位的动物／人体伦理要求、设备版本、组织学定位、同步校准和具体质控流程。本文不提供适用于所有实验的通用手术步骤或数值阈值。
-3. **科研证据：** 针对要引用的结论，核对是否为单探针记录、跨会话追踪还是跨实验室汇总数据；对每一个细胞类型或因果主张确认是否有独立验证。
 4. **跨物种外推：** 检查小鼠／大鼠、非人灵长类及人类短时术中研究的适用边界，不把可行性验证解释成常规临床效用已成立。
-5. **重复与双链：** 检查 Vault 中是否已有「Neuropixels／Neuropixels电极」的规范节点及真实关联条目。只有确认目标存在且计划公开后，才添加 Obsidian Wikilink。
-6. **发布：** 本文件维持 `publish: false` 与 `review_status: needs_review`；人工完成科学、引用、元数据及双链审核后，才手动批准发布并更新 03 轴索引及相关主页。

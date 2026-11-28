@@ -1,21 +1,16 @@
 ---
 publish: true
-type: concept
-title: "GABA"
-axis: 研究对象与尺度
-category: "分子与递质"
-core: false
-description: "GABA（γ-氨基丁酸）是成年哺乳动物中枢神经系统重要的抑制性神经递质，通过离子型 GABA_A 和代谢型 GABA_B 受体调节细胞及网络活动，其作用方向依赖氯稳态、受体和发育情境。"
 aliases:
   - γ-氨基丁酸
   - γ-Aminobutyric acid
   - gamma-aminobutyric acid
   - 4-氨基丁酸
+title: GABA
+description: GABA（γ-氨基丁酸）是成年哺乳动物中枢神经系统重要的抑制性神经递质，通过离子型 GABA_A 和代谢型 GABA_B 受体调节细胞及网络活动，其作用方向依赖氯稳态、受体和发育情境。
+created: 2026-10-15T05:56:56.247Z
 tags:
   - 类型/概念
   - 层/世界
-review_status: needs_review
-agent: "GPT-6"
 ---
 
 # GABA
@@ -181,13 +176,10 @@ GABA 信号与癫痫的联系具有突触、离子、网络和药理层面的支
 
 ## 相关节点
 
-> **双链说明：** 本次只读取了你上传的 GABA 模板以及此前对话中可见的规则，无法验证完整 Vault 的实际文件名、是否计划公开与同义节点。因此下列均为**普通文本候选**，暂不写入任何未经核实的 Wikilink 双链。
-
 - **分子与受体：** 谷氨酸、GAD65/GAD67、PLP、VGAT/VIAAT、GAT1/GAT3、GABA-T、SSADH、GABA\_A 受体、GABA\_B 受体、GABA\_A-ρ（历史 GABA\_C）、苯二氮䓬类、神经甾体、甘氨酸受体。
 - **离子与发育：** NKCC1、KCC2、Cl⁻/HCO₃⁻、E\_GABA、分流性抑制、去极化性 GABA、兴奋性/抑制性平衡、神经元成熟、神经发育。
 - **细胞与回路：** PV、SST、VIP 中间神经元、前馈抑制、反馈抑制、去抑制、突触前抑制、海马、新皮层、纹状体、gamma 振荡、突触可塑性。
 - **测量和证据：** GABA MRS、MEGA-PRESS、GABA+、膜片钳、氯离子成像、光遗传、基因敲除、结构生物学、可重复性、脑–肠轴、营养补充剂证据。
-- **与已有讨论的候选连接：** AMPA 受体、CREB、5-羟色胺。仅在人工确认 Vault 中确有拟公开规范节点后才补入对应路径双链。
 
 ## 关键文献与资料
 
@@ -251,8 +243,6 @@ GABA 信号与癫痫的联系具有突触、离子、网络和药理层面的支
 | (Zhu et al., 2023, Nat Struct Mol Biol) | Zhu et al. (2023). Molecular basis for substrate recognition and transport of human GABA transporter GAT1 | Nat Struct Mol Biol | [原文入口](https://doi.org/10.1038/s41594-023-00983-z) | 冷冻电镜+生化原始研究 | 人 GAT1 与 GABA、抑制剂的结合/构象机制；蛋白结构不能独立代表临床疗效 |
 | (Zhou et al., 2025, Nature) | Zhou et al. (2025). Resolving native GABAA receptor structures from the human brain | Nature | [原文入口](https://doi.org/10.1038/s41586-024-08454-1) | 人手术组织原生复合物结构原始研究 | 人脑癫痫手术组织中 α1 受体组装异质性；样本选择/混合和疾病背景限制外推 |
 
-### 文献使用导航与人工复核重点
-
 - **发现史与代谢：** (Roberts & Frankel, 1950, J Biol Chem; Awapara et al., 1950, J Biol Chem; Udenfriend, 1950, J Biol Chem; Bazemore et al., 1957, J Neurochem; Asada et al., 1997, PNAS; Kash et al., 1997, PNAS; Guastella et al., 1990, Science; McIntire et al., 1997, Nature; Zhu et al., 2023, Nat Struct Mol Biol; Bak et al., 2006, J Neurochem; Vogel et al., 2018, J Inherit Metab Dis)、(Condie et al., 1997, PNAS)；特别分清化学鉴定、合成缺失和发作易感之间的不同结论。
 - **GABA\_A：** (Schofield et al., 1987, Nature; Levitan et al., 1988, Nature; Olsen & Sieghart, 2009, Neuropharmacology; Stell & Mody, 2002, J Neurosci; Glykys & Mody, 2007, J Physiol; Farrant & Nusser, 2005, Nat Rev Neurosci; Brickley & Mody, 2012, Neuron; Miller & Aricescu, 2014, Nature; Laverty et al., 2019, Nature; Masiulis et al., 2019, Nature; Zhou et al., 2025, Nature; Bormann & Feigenspan, 1995, Trends Neurosci; IUPHAR/BPS, 2019, IUPHAR/BPS Guide to Pharmacology)（含 2025 年人原生复合物研究）；ρ 相关术语以 (IUPHAR/BPS, 2019, IUPHAR/BPS Guide to Pharmacology) 的 IUPHAR 分类为现行标准。
 - **GABA\_B：** (Kaupmann et al., 1997, Nature; Jones et al., 1998, Nature; White et al., 1998, Nature; Bettler et al., 2004, Physiol Rev; Mao et al., 2020, Cell Res)、(IUPHAR/BPS, 2019, IUPHAR/BPS Guide to Pharmacology)；以两项独立异二聚体研究和后续冷冻电镜区分功能与结构。
@@ -260,13 +250,5 @@ GABA 信号与癫痫的联系具有突触、离子、网络和药理层面的支
 - **回路和非经典共释放：** (Isaacson & Scanziani, 2011, Neuron; Cardin et al., 2009, Nature; Sohal et al., 2009, Nature; Tremblay et al., 2016, Neuron; Tritsch et al., 2012, Nature; Tritsch et al., 2014, eLife)；从特定回路操作推及人类认知时保持克制。
 - **药理、疾病、测量与补充剂：** (Rudolph et al., 1999, Nature; Löw et al., 2000, Science; Treiman, 2001, Epilepsia; Meltzer-Brody et al., 2018, Lancet; Puts & Edden, 2012, Prog Nucl Magn Reson Spectrosc; Mullins et al., 2014, NeuroImage; Boonstra et al., 2015, Front Psychol; Hepsomali et al., 2020, Front Neurosci; Strandwitz et al., 2019, Nat Microbiol)；分清动物基因型、临床随机试验、MRS 方法和系统综述。
 
-**发布前人工验收：**
-
-1. 核查 Vault 中是否已经存在 `GABA`、`γ-氨基丁酸` 或合并型规范节点；无全库目录信息，当前只能做有限范围查重。
 2. 仔细核对 (Asada et al., 1997, PNAS; Kash et al., 1997, PNAS)、(Condie et al., 1997, PNAS) 的 GAD 异构体、动物遗传背景和是否存活至测试阶段；对 (Ben-Ari et al., 1989, J Physiol; Staley et al., 1995, Science; Rivera et al., 1999, Nature; Rivera et al., 2004, J Neurosci; Glykys et al., 2014, Science; Kirmse et al., 2015, Nat Commun; Tyzio et al., 2006, Science; Rheims et al., 2009, J Neurochem; Kaila et al., 2014, Nat Rev Neurosci) 复核制备条件、内液 Cl⁻、年龄、刺激方案与是否真的测到动作电位。
-3. 精读 (Zhou et al., 2025, Nature) 的方法及补充材料，尤其供体来源、预处理、pooling、α1 富集选择性与异构体估计问题。
-4. 如需公布人类“低 GABA 导致某病”之类因果主张，须另做该**具体病种**的纵向证据、遗传干预和人体临床综合核查；MRS 关联研究不能顶替因果验证。
-5. 扫描库中真实存在、打算公开的节点后再添加 Wikilink；相关候选和参考文献链接不自动成为库内节点。
-6. 人工审核通过后才按项目流程修改 `review_status` 并决定是否手动设置 `publish: true`；随后通过你现有的 Quartz Syncer 更新本节点、**02\_研究对象与尺度轴**及需要更新的首页。本 `.md` 文件**尚未写入 Obsidian Vault**，也未部署网站。
-
-**未完成／原因：** 没有完整 Vault 目录及写入权限，未执行全库同义节点检查、真实页面反向链接检查和 `tools/检查森林.mjs`；没有逐篇取得并重算原始数据、补充材料或对整领域开展系统元分析；因此不报告未经核实的重复率、效应量、跨年龄阶段精确比例或临床疗效通用结论。
+3. 如需公布人类“低 GABA 导致某病”之类因果主张，须另做该**具体病种**的纵向证据、遗传干预和人体临床综合核查；MRS 关联研究不能顶替因果验证。

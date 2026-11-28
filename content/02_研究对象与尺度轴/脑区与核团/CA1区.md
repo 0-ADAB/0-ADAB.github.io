@@ -111,13 +111,9 @@ CA1锥体细胞的树突可触发局部尖峰及非线性电位，决定相近�
 
 ## 相关节点
 
-**直接上位与相邻结构（待Vault核验，不生成双链）：** 海马、CA2区、CA3区、齿状回、下托、内嗅皮层、海马结构、Schaffer侧支、temporoammonic通路。
-
 **细胞与回路（候选节点）：** CA1锥体神经元、位置细胞、时间细胞、O-LM中间神经元、篮状细胞、树突尖峰、神经元亚层、海马背腹长轴。
 
 **机制与证据（候选节点）：** NMDA受体、AMPA受体、长时程增强、长时程抑制、行为时间尺度突触可塑性（BTSP）、theta节律、gamma振荡、尖波—纹波（SWR）、序列重放、记忆巩固、CA1缺血易损性。
-
-> **双链安全说明：** 当前仅依据你给的模板和本次论文核验，无法确认Vault内哪些候选节点真实存在、已审核且拟公开；因此以上全部采用普通文本，不创建任何未经核验的Obsidian双链。现有“海马”模板的出现不代表对应公开节点已被验证。
 
 ## 关键文献与资料
 
@@ -177,9 +173,5 @@ CA1锥体细胞的树突可触发局部尖峰及非线性电位，决定相近�
 | 50 · 人类与病理 | (West et al., 1994, Lancet) | West MJ; Coleman PD; Flood DG; Troncoso JC (1994). _Differences in the pattern of hippocampal neuronal loss in normal ageing and Alzheimer’s disease_. **Lancet**, 344:769–772. | [DOI](https://doi.org/10.1016/S0140-6736%2894%2992338-8) | 人脑病理定量比较 | 区分正常衰老与AD海马细胞损失分布；历史样本与诊断技术的局限需考虑。 |
 | 51 · 人类与病理 | (Miller et al., 2013, Science) | Miller JF; Neufang M; Solway A; Brandt A; Trippel M; et al. (2013). _Neural activity in human hippocampal formation reveals the spatial context of retrieved memories_. **Science**, 342:1111–1114. | [DOI](https://doi.org/10.1126/science.1244056) | 人类临床植入电极原始研究 | 人类海马结构活动可与回忆的空间情境相关；记录范围并不纯限于CA1。 |
 
-**资料核验与人工审核说明（截至2026-10-15）**
-
 - 本表原始研究、综述与专家方法共识的性质已明确标识；对“直接CA1”与“整个海马结构”的研究范围特别加注。
 - **后续更正**：Basu等2016年 _Science_ 论文另有期刊更正记录（[10.1126/science.aaf2878](https://doi.org/10.1126/science.aaf2878)），人工复核请采用更正版；Jadhav等2012年 _Science_ 论文另有2026年勘误（[10.1126/science.aek1745](https://doi.org/10.1126/science.aek1745)），其改动内容本次未能全文核定；Widloski与Foster 2025年 _Nat Commun_ 的2026年更正（[10.1038/s41467-026-72252-8](https://doi.org/10.1038/s41467-026-72252-8)）由期刊声明为参考文献修正。
-- 人工审核优先：CA1与下托／CA2的解剖边界及图谱命名；CA1专属与海马整体记录的区分；海马长轴跨物种对应；SWR检测算法和2026年勘误全文；2025—2026年结果的后续独立重复。
-- 上线前由人工核对Vault中相关候选节点是否存在且可公开，复核外部 DOI 和页码，再考虑把 `review_status` 更新为已审状态并将 `publish` 改为 `true`。**本稿未写入Obsidian，也未发布。**

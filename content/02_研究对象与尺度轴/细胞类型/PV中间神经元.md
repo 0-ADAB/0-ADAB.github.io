@@ -174,8 +174,6 @@ GABA 代谢酶突变、GABA\_A 亚型操作、周胞体抑制解剖观察、PV �
 
 ## 相关节点
 
-> **双链核验状态：** 仅拿到单个节点模板，没有完整 Vault 目录及发布状态。以下条目仅为**纯文本候选关系**；没有擅自创建任何 Obsidian 双链，也不暗示这些文件已经存在。
-
 - **细胞类型：** SST中间神经元；VIP中间神经元；篮状细胞；吊灯细胞；锥体神经元；星形胶质细胞；少突胶质细胞。
 - **分子与递质：** GABA；GABA\_A受体；PVALB；GAD65/GAD67；Kv3通道；Nav1.1（SCN1A）；NRG1/ErbB4；VGF；PGC-1α；神经元周围网。
 - **神经通路与网络：** 兴奋—抑制平衡；γ振荡；海马CA1回路；视觉皮层局部回路；前额叶皮层；中央执行网络。
@@ -227,10 +225,5 @@ GABA 代谢酶突变、GABA\_A 亚型操作、周胞体抑制解剖观察、PV �
 | (Hosseini Fin et al., 2025, Development) | Hosseini Fin, N. S. et al. (2025) — _Developmental dynamics of marmoset prefrontal cortical SST and PV interneuron networks highlight primate-specific features_ | Development 152: dev204254 | [10.1242/dev.204254](https://doi.org/10.1242/dev.204254) | 原始研究｜狨猴前额叶发育图谱 | 表明灵长类 PV 成熟时间延长及离子通道表达变化；非人灵长类仍非人脑功能因果验证。 |
 | (Caccavano et al., 2025, Neuron) | Caccavano, A. P. et al. (2025) — _Divergent opioid-mediated suppression of inhibition between hippocampus and neocortex across species and development_ | Neuron 113: 1805–1822.e7 | [10.1016/j.neuron.2025.03.005](https://doi.org/10.1016/j.neuron.2025.03.005) | 原始研究｜啮齿类/灵长类/人离体组织 | 不同脑区 PV 回路对阿片类调节敏感性不同；支持脑区依赖，不能整体外推。 |
 
-### 证据审计与发布前人工检查
-
 - **编排与来源：** 论文题名、年份、刊物和 DOI 以已核查的 PubMed、PMC 及出版社原始条目为准，最晚纳入 2025 年正式发表的研究。2025 年 `Moissidis`、`Selten` 和 `Taxidis` 等资料标记为原始研究而非领域共识。
-- **重要更正：** `(Donato et al., 2013, Nature)` 的期刊条目存在 **2025 年 Author Correction（作者更正）**，人工验收时应检查版本说明与影响范围。
 - **未执行的验证：** 本稿未获得 Vault 全目录、没有复跑各项光遗传/电生理实验，也未完成正式系统评价；不能报告未验证的复现率、效应量汇总或“跨领域统一共识”。
-- **优先人工复核：** ① PV/FS/Pvalb-Cre 的身份识别是否在每项讨论中准确；② 吊灯细胞的氯离子生理争议；③ PV/SST 参与 γ 的不同实验条件；④ PNN 与关键期的干预专一性；⑤ 患者 PV 表达与细胞数量是否被混淆；⑥ 相关候选节点能否在 Vault 中确认实际存在并准备公开。
-- **发布操作：** 初稿保持 `publish: false`、`core: false`、`review_status: needs_review`。人工核查并完善真实双链后，才考虑改变发布开关及同步对应轴页面。

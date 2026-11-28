@@ -130,16 +130,10 @@ Küry 等在多中心病例中报告 CAMK2A/CAMK2B 罕见新生变异与智力�
 
 以上强结论均超出当前资料所能独立支撑的范围(Tullis et al., 2023, Nature; Chen et al., 2024, PNAS; Rumian et al., 2024, Cell Rep; Bayer & Giese, 2025, Nat Neurosci; Stratton et al., 2014, eLife; Lučić et al., 2023, eLife; Küry et al., 2017, Am J Hum Genet; Akita et al., 2018, Ann Clin Transl Neurol; Nicoll & Schulman, 2023, Physiol Rev; Curtis et al., 2025, J Neurosci; McKay et al., 2018, Cell Rep)。
 
-### 人工重点审核项
-
-- 核对 **CaMKIIα 的 T286** 与其他亚型 **T287** 的编号在全文、图注和将来关联节点中是否一致。
 - 如准备写入某个明确的“CaMKII 是 LTP 必需条件”命题节点，应先指定**脑区、细胞类型、诱导方式、发育阶段、干预工具和观测窗口**，并将 (Halt et al., 2012, EMBO J) 与 (McKay et al., 2018, Cell Rep)、(Tullis et al., 2023, Nature) 与 (Chen et al., 2024, PNAS; Rumian et al., 2024, Cell Rep) 并列呈现。
 - 临床相关段落仅作研究关联，不应扩写成未有循证依据的药物、筛查或干预建议。
-- 进一步人工审查各论文补充材料、原始数据与统计设计；本稿已核验书目信息和可访问摘要/部分全文，但不宣称完成实验原始数据复算或严格系统评价。
 
 ## 相关节点
-
-> **双链安全说明：** 未提供可验证的完整 Obsidian Vault 目录与拟公开节点列表；以下全部是**普通文本候选词**，不自动建立 Wikilink。即使本系列已经写过相近主题，也不能据此推断它已存在于你的 Vault 中。
 
 - **直接分子关联：** NMDA受体、GluN2B、AMPA受体、GluA1、钙离子信号、钙调蛋白（CaM）、蛋白磷酸化、蛋白磷酸酶、SynGAP、TARP、PSD-95、Shank3、α-actinin-2。
 - **细胞和机制关联：** 突触后致密区、树突棘、肌动蛋白（F-actin）、CaMKIIα、CaMKIIβ、蛋白质相分离、突触蛋白复合体。
@@ -194,9 +188,5 @@ Küry 等在多中心病例中报告 CAMK2A/CAMK2B 罕见新生变异与智力�
 | (Bayer & Giese, 2025, Nat Neurosci) | Bayer & Giese (2025). A revised view of the role of CaMKII in learning and memory | Nat Neurosci | [原文入口](https://doi.org/10.1038/s41593-024-01809-x) | 观点与综合评述（2024先行上线）：pT286的信号处理作用及记忆维持模型修正 | — |
 | (Curtis et al., 2025, J Neurosci) | Curtis et al. (2025). Widely Used CaMKII Regulatory Segment Mutations Cause Tight Actinin Binding and Dendritic Spine Enlargement in Unstimulated Neurons | J Neurosci | [原文入口](https://doi.org/10.1523/JNEUROSCI.0795-25.2025) | 原始结构与细胞实验：T305A/T306A突变具α-actinin-2结合的结构性混杂 | — |
 
-### 编辑与发表状态
-
 - **稿件性质：** 供研究者逐条核验的概念节点初稿；非系统评价、非临床指南。
 - **最重要的证据张力：** (Tullis et al., 2023, Nature)、(Chen et al., 2024, PNAS)、(Rumian et al., 2024, Cell Rep) 对 CaMKII 结构性作用、自磷酸化和早期/晚期 LTP 阶段的解释；(Halt et al., 2012, EMBO J) 与 (McKay et al., 2018, Cell Rep) 对不同 GluN2B 突变和刺激协议的结果。
-- **未完成／原因：** 无完整 Vault 列表，不能查重、验证已有节点或创建安全 Wikilink；无可执行的项目级检查脚本，不能运行 `node tools/检查森林.mjs`；尚未逐个重分析论文原始数据。
-- **发表前建议：** 人工确认文献适用条件、重复节点、相关节点实际存在及 Quartz 发布范围；审稿完成后再把 `review_status` 与 `publish` 按你的规则更新。此文件本身保持 `publish: false`。

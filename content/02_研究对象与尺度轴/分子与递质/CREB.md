@@ -1,21 +1,16 @@
 ---
 publish: true
-type: concept
-title: "CREB"
-axis: 研究对象与尺度
-category: "分子与递质"
-core: false
-description: "CREB 是一种将 cAMP、Ca²⁺ 等细胞信号与特定基因转录联系起来的 bZIP 转录因子，其对神经可塑性和记忆的作用依赖细胞类型、共调控因子与实验条件。"
 aliases:
   - CREB1
   - cAMP response element-binding protein
   - cAMP反应元件结合蛋白
   - 环磷酸腺苷反应元件结合蛋白
+title: CREB
+description: CREB 是一种将 cAMP、Ca²⁺ 等细胞信号与特定基因转录联系起来的 bZIP 转录因子，其对神经可塑性和记忆的作用依赖细胞类型、共调控因子与实验条件。
+created: 2026-10-15T05:43:46.513Z
 tags:
   - 类型/概念
   - 层/世界
-review_status: needs_review
-agent: "GPT-6"
 ---
 
 # CREB
@@ -135,8 +130,6 @@ CREB 属于 **bZIP（碱性区—亮氨酸拉链）转录因子**：碱性区结
 
 ## 相关节点
 
-> **双链状态：** 仅依据当前提供的节点模板与已讨论的文件，无法核实完整 Vault 中哪些节点已实际存在且拟公开，故下列均作为**普通文本候选**，不生成未经核验的 Wikilink。
-
 - **上游信号与分子：** 5-羟色胺（5-HT）、AMPA 受体、NMDA 受体、L 型电压门控钙通道、cAMP、PKA、CaMKIV、ERK/MAPK、BDNF、TrkB。
 - **转录机制：** CRE（cAMP 反应元件）、CREB1、CBP/CREBBP、EP300、CRTC1、CRTC2、CREM、ATF1、ATF4、FOS、ARC、染色质乙酰化、活动依赖性基因转录。
 - **功能与范式：** 长时程增强（LTP）、长时程抑制（LTD）、突触标记与捕获、记忆巩固、记忆再巩固、记忆痕迹分配、神经元兴奋性、海马、杏仁核、昼夜节律。
@@ -195,19 +188,7 @@ CREB 属于 **bZIP（碱性区—亮氨酸拉链）转录因子**：碱性区结
 | (Zhang et al., 2025, PNAS) | Zhang et al. (2025). S-Nitrosylation of CRTC1 in Alzheimer's disease impairs CREB-dependent gene expression induced by neuronal activity | PNAS | [原文入口](https://doi.org/10.1073/pnas.2418179122) | 疾病模型原始研究 | SNO–CRTC1、CREB 结合及 AD 模型表型；非临床治疗证据 |
 | (Tan et al., 2026, Neuron) | Tan et al. (2026). A neuromodulatory circuit-to-molecular pathway for reformatting aversive memories during recall | Neuron | [原文入口](https://doi.org/10.1016/j.neuron.2026.01.006) | 环路原始研究 | 大鼠杏仁核去甲肾上腺素–β₂ 受体–CRTC1 与再巩固 |
 
-### 证据索引与人工验收
-
 - **直接分子机制：** (Montminy et al., 1986, PNAS; Montminy & Bilezikjian, 1987, Nature; Gonzalez & Montminy, 1989, Cell; Sheng et al., 1991, Science; Chrivia et al., 1993, Nature; Radhakrishnan et al., 1997, Cell; Deisseroth et al., 1996, Neuron; Bito et al., 1996, Cell; Tao et al., 1998, Neuron; Shieh et al., 1998, Neuron; Kornhauser et al., 2002, Neuron; Hardingham et al., 2002, Nat Neurosci; Gau et al., 2002, Neuron; Conkright et al., 2003, Mol Cell; Screaton et al., 2004, Cell; Impey et al., 2004, Cell; Zhang et al., 2005, PNAS; Kovács et al., 2007, PNAS; Ch'ng et al., 2012, Cell; Esvald et al., 2020, J Neurosci)；结合、突变、结构、信号与靶基因，不应仅凭蛋白磷酸化声称靶基因被激活。
 - **跨物种可塑性与学习记忆：** (Dash et al., 1990, Nature; Kaang et al., 1993, Neuron; Bartsch et al., 1995, Cell; Yin et al., 1994, Cell; Yin et al., 1995, Cell; Bourtchuladze et al., 1994, Cell; Kogan et al., 1997, Curr Biol; Hummler et al., 1994, PNAS; Gass et al., 1998, Learn Mem; Balschun et al., 2003, J Neurosci; Josselyn et al., 2001, J Neurosci; Barco et al., 2002, Cell; Pittenger et al., 2002, Neuron; Kida et al., 2002, Nat Neurosci; Han et al., 2007, Science; Zhou et al., 2009, Nat Neurosci)；区分物种、脑区、行为任务、异构体、干预时期和训练强度。
 - **其它功能、综述与方法边界：** (Lonze et al., 2002, Neuron; Mayr & Montminy, 2001, Nat Rev Mol Cell Biol; Lonze & Ginty, 2002, Neuron; Carlezon et al., 2005, Trends Neurosci; Altarejos & Montminy, 2011, Nat Rev Mol Cell Biol; Herdegen et al., 1994, Mol Brain Res)；注意综述与抗体特异性。
 - **较新研究补充：** (Atsumi et al., 2024, Cell Rep; Zent & Dell'Acqua, 2025, J Neurosci; Zhang et al., 2025, PNAS; Tan et al., 2026, Neuron)（2024–2026）；涵盖人源细胞培养、啮齿类神经元、疾病模型、记忆再巩固环路，**不是**临床疗效资料。
-
-**人工审核优先级：**
-
-1. 检查 Vault 是否已有 `CREB`、`CREB1` 或同义规范节点，再决定新建或合并；确认分类 `分子与递质` 的长期命名是否符合你的整体导航。
-2. 对 (Bourtchuladze et al., 1994, Cell; Kogan et al., 1997, Curr Biol; Hummler et al., 1994, PNAS; Gass et al., 1998, Learn Mem; Balschun et al., 2003, J Neurosci)、(Pittenger et al., 2002, Neuron) 的遗传背景、异构体、训练方案和阴性结果精读正文及补充资料；不能省略与早期正结果的冲突。
-3. 对 (Atsumi et al., 2024, Cell Rep; Zent & Dell'Acqua, 2025, J Neurosci; Zhang et al., 2025, PNAS; Tan et al., 2026, Neuron) 的近期工作复核全文、统计和限制；如需声称独立重复，额外查找独立实验室/验证研究。
-4. 对照 Vault 中已经存在且**计划公开**的页面，仅在人工核实后添加 Wikilink；避免对未建文件加虚假链接。
-5. 审查通过后再改为 `review_status: reviewed`（若你的流程采用此值）并由你手动将 `publish: true`；然后通过 Quartz Syncer 更新本节点、**02\_研究对象与尺度轴**及需要更新的首页。此文件本身未写入 Vault，也未进行网站发布。
-
-**未完成／原因：** 未查看完整 Obsidian Vault，因而未执行全库查重、双链存在性检测与 `tools/检查森林.mjs`；未取得全文及原始数据供逐图复核，未做元分析或效应量复算；未推断临床效力与人体因果性。这些工作需要人工验收或补充可访问的资料。

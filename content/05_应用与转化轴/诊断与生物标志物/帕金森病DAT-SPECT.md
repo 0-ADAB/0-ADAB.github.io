@@ -157,8 +157,6 @@ tags:
 
 ## 相关节点
 
-由于本次只提供了目标模板，没有可核验的完整 Obsidian Vault 清单和已发布状态，**以下仅为普通文本关联候选，不创建未经确认的 Obsidian 双链**。
-
 - **同轴诊断与生物标志物：** 路易体痴呆生物标志物、α-突触核蛋白种子扩增检测、帕金森病嗅觉测试、帕金森病的功能影像、帕金森综合征鉴别诊断、神经黑色素 MRI、帕金森病研究性分型。
 - **研究对象与尺度：** 黑质致密部、纹状体、尾状核、壳核、黑质纹状体通路、多巴胺转运体（DAT）、多巴胺能神经元、帕金森病（PD）、多系统萎缩（MSA）、进行性核上性麻痹（PSP）、路易体痴呆（DLB）。
 - **方法与模型：** 单光子发射计算机断层成像（SPECT）、正电子发射断层成像（PET）、放射性示踪剂、SBR 半定量分析、正常数据库标准化、受试者运动伪迹、机器学习读片、纵向队列。
@@ -200,10 +198,7 @@ tags:
 | `(Ozawa et al., 2026, npj Parkinsons Dis)` | Ozawa et al. (2026). _DAT-SPECT-based subtype and stage inference in Parkinson's disease_. npj Parkinsons Dis 12:142. | [DOI](https://doi.org/10.1038/s41531-026-01347-2) | PPMI 队列分型/纵向探索研究 | 基于 636 名药物初治 PD 和 126 健康对照的分型模型；重复使用 PPMI 数据，不等于外部前瞻性临床验证。 |
 | `(Rissardo et al., 2026, J Clin Neurosci)` | Rissardo et al. (2026). _Clinical utility of DaTscan in clinically uncertain parkinsonian syndromes: a systematic review and meta-analysis_. J Clin Neurosci 154:112305; online 2026-09-17, 正式卷期 2026-12. | [DOI](https://doi.org/10.1016/j.jocn.2026.112305) | 最新系统综述与荟萃分析 | 诊断修改合并比例约三分之一、各初步诊断差异显著；高度异质且不能代替直接临床结果试验。 |
 
-### 文献辨析与人工审核
-
 - **疾病与转运体信号分开表述：** 论文中用“DAT 摄取下降/缺损”描述影像，用“PD/DLB/MSA/PSP”描述临床疾病；不要在正文把两者写成严格同义或双向充分必要条件。
 - **重复发表与队列重合：** (Kupsch et al., 2012, J Neurol Neurosurg Psychiatry) 与 (Kupsch et al., 2013, Neurodegener Dis) 为同一多中心随机试验的不同随访口径；PPMI 的 (Marek et al., 2018, Ann Clin Transl Neurol)、(Simuni et al., 2018, Mov Disord) 和 (Ozawa et al., 2026, npj Parkinsons Dis) 涉及同一大型基础项目，不可自动计为三次独立人群验证。
 - **在线与正式刊卷年份：** (Murao et al., 2026, Ann Nucl Med) 于 2025 年先在线发表，2026 年纳入期刊卷期；(Rissardo et al., 2026, J Clin Neurosci) 于 2026-09-17 先行在线发表，正式卷期为 2026 年 12 月（本节点并未将未来正式出版视为已发生的另一次研究）。
 - **监管时效：** 美国 2026 年 4 月说明书与 EMA 2026 年 2 月产品信息经过核对；在中国或其他地区引用获批适应证、药物停用/哺乳建议前仍需复核当地最新监管标签，**不得从美国批准推出全球统一批准**。
-- **正式发布前人工验收：** 与 Vault 已有节点查重，核对 alias 中 DaTscan 是否与品牌节点冲突，确认相关节点是否真实存在且拟公开，再人工加双链；复核医疗器械、放射性药品及诊疗描述是否符合目标读者所在地区规范。通过审核后由维护者决定是否改动 `review_status` 和 `publish`，不自动部署。

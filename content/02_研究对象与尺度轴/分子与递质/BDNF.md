@@ -169,9 +169,6 @@ Bekinschtein 等（2007、2008）在**特定大鼠学习任务**中通过时间�
 
 这些说法混淆了**分子功能、动物因果证据、人群组间相关、临床个体预测**，不应写入正式公开稿。(Egan et al., 2003, Cell; Mandelman & Grigorenko, 2012, Genes Brain Behav; Kambeitz et al., 2012, Neurosci Biobehav Rev; Harrisberger et al., 2014, Neurosci Biobehav Rev; Molendijk et al., 2014, Mol Psychiatry; Polyakova et al., 2015, J Affect Disord; Naegelin et al., 2018, eNeuro; Tsuchimine et al., 2014, Neuropsychobiology; Gejl et al., 2019, Sci Rep; Klein et al., 2011, Int J Neuropsychopharmacol; Tikhonova et al., 2022, Int J Mol Sci; Wang et al., 2022, Brain Behav; Gholami et al., 2025, Exp Gerontol; Bevilacqua et al., 2026, Clin Chem Lab Med; Autry et al., 2011, Nature; Lepack et al., 2014, Int J Neuropsychopharmacol; Casarotto et al., 2021, Cell; Castrén & Monteggia, 2021, Biol Psychiatry)
 
-### 待人工核查与发布前验收
-
-- **概念命名：** 如 Vault 已有“脑源性神经营养因子 / BDNF”同义规范节点，优先合并而非创建第二份；核对缩写别名不会与 BDNF 基因节点混淆。
 - **生化层面：** 若引用蛋白酶或具体前体/成熟浓度，请回看相应论文原始方法、抗体信息及补充材料；勿将培养系统里的 proBDNF 作用普遍外推。
 - **人类研究：** 若增写效应量、种族亚组或临床阈值，应直接审查分析模型及原始表格；本稿不设定诊断阈值。
 - **最新检测文献：** Bevilacqua 等（2026，Clin Chem Lab Med）仅评述**卒中研究中前分析变量的报告情况**，不能将其写成覆盖所有疾病的正式实验室标准。
@@ -179,8 +176,6 @@ Bekinschtein 等（2007、2008）在**特定大鼠学习任务**中通过时间�
 - **验证范围：** 书目信息与关键摘要已作在线核对；这**不等于**逐篇全文复核、系统评价重算、原始数据再分析，亦不等于检查了用户 Vault 的全部链接。
 
 ## 相关节点
-
-> **双链处理原则：** 当前提供的是 BDNF 空白模板而非完整 Vault 目录或拟发布清单。以下仅列**纯文本候选节点名**；不生成无法确认存在的 Obsidian 双链，也不声称它们已落盘。
 
 - **分子与受体候选：** TrkB / NTRK2、proBDNF、成熟 BDNF、p75NTR / NGFR、sortilin、NGF、NT-3、NT-4、神经营养因子、钙调蛋白、CaMKII、ERK、PI3K–Akt、PLCγ、CREB。
 - **突触与细胞候选：** NMDA受体、AMPA受体、树突棘、局部蛋白质合成、活动依赖性分泌、突触可塑性、长时程增强（LTP）、长时程抑制（LTD）、海马、神经发生。
@@ -234,10 +229,4 @@ Bekinschtein 等（2007、2008）在**特定大鼠学习任务**中通过时间�
 | (Gholami et al., 2025, Exp Gerontol) | Gholami et al. (2025). Exercise training alters resting brain-derived neurotrophic factor concentration in older adults: A systematic review with meta-analysis of randomized-controlled trials. | Exp Gerontol | [原文入口](https://doi.org/10.1016/j.exger.2024.112658) | 老年 RCT 系统评价与荟萃分析 | 不同训练方式对静息血浆/血清 BDNF 的平均影响 |
 | (Bevilacqua et al., 2026, Clin Chem Lab Med) | Bevilacqua et al. (2026). Reporting of pre-analytical variables affecting the determination of brain-derived neurotrophic factor (BDNF) in patients with stroke: a scoping review. | Clin Chem Lab Med | [原文入口](https://doi.org/10.1515/cclm-2026-0277) | 范围综述（卒中人群） | 研究前分析变量报告不足；仅限所纳入卒中研究 |
 
-### 编辑说明与审核状态
-
-- **节点路径建议：** `forAccess/02_研究对象与尺度轴/分子与递质/BDNF.md`（所属轴：研究对象与尺度；类别：分子与递质；类型：`concept`；以该蛋白及其受体功能为主要解释对象）。
-- **初稿保守状态：** `publish: false`；`review_status: needs_review`；`core: false`。未经人工审核不对外发布。
 - **来源核验概况：** 主要依据 PubMed/PMC/期刊页面检查文献的题目、首作者、年份、期刊及 DOI，选入原始研究、方法学、系统评价和机制综述；未把所有论文当成独立复现。
-- **未完成／原因：** 尚无完整 Obsidian Vault 目录，不能可靠查重及核实拟公开节点，因此不生成 Wikilink；没有可用的 Vault 本地执行环境和 `tools/检查森林.mjs`，无法运行用户的项目级检查；未逐个重新计算研究统计结果，也没有完成正式的系统综述风险偏倚评分。
-- **人工验收流程：** 先核对 Vault 同义节点与文献元数据（特别是分泌形式、Val66Met 人群证据、外周标志物的测定范围），再审阅相关节点的存在和发布状态。确认无误后才调整 `publish: true` 及审核状态，并在 Obsidian 中按现有 Quartz Syncer 流程发布该节点及必要更新的“研究对象与尺度”轴索引/主页；本文件尚未写入 Vault，也没有触发同步。

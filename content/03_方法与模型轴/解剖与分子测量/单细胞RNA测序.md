@@ -164,12 +164,9 @@ tags:
 
 ## 相关节点
 
-**双链安全状态：** 当前只确认了上传的节点模板，而不能确认整个Obsidian Vault里已有节点的真实相对路径与发布状态。因此本文件**不生成任何未经核实的 Obsidian 双链**；以下均为普通文本候选。
-
 - **同分类可考虑联动：** AAV病毒载体示踪；单突触狂犬病毒示踪（分子细胞分类 vs. 区域投射/候选突触前输入）。
 - **上位与紧邻方法候选：** 单核RNA测序（snRNA-seq）、空间转录组、单细胞多组学、CITE-seq、Patch-seq、原位杂交、RNA velocity、伪时间分析、单细胞数据整合、转录组细胞类型注释。
 - **证据与推理候选：** 细胞类型与细胞状态、批次效应、独立生物学重复、伪重复、差异表达分析、可重复性、技术偏差、结构连接与功能连接、因果推断。
-- **入库前查重：** 检查是否已有“单细胞转录组测序”“scRNA-seq”或缩写节点，避免创建重复规范节点；确认目标文档存在并拟公开后再补正式双链。
 
 ## 参考资料
 
@@ -223,11 +220,7 @@ tags:
 | (Yang et al., 2026, Nature) | Yang H et al. (2026). _Lifespan single-cell transcriptomic atlas of the human prefrontal cortex._ | Nature 657:1003–1015 | [DOI](https://doi.org/10.1038/s41586-026-10271-7) | 最新人脑全生命周期单核图谱 | 前额叶跨年龄供体的分子变化；横断面群体数据不是单细胞时间追踪。 |
 | (Ning et al., 2026, BMC Neurosci) | Ning J et al. (2026). _A systematic multi-factorial benchmarking reveals critical technical biases in single-nucleus RNA sequencing of the brain._ | BMC Neurosci (2026，早期在线，待最终卷页) | [DOI](https://doi.org/10.1186/s12868-026-01058-7) | 最新小鼠脑单核技术偏差基准 | 不同取材/固定/平台影响所测细胞群；新发早期版本及特定条件，不能泛化。 |
 
-### 证据边界与人工审核重点
-
 - **较稳定：** 单细胞/单核RNA测序可系统观察细胞RNA表达异质性，适用于构建细胞分子图谱；技术与跨模态研究表明，脑细胞大类中的许多转录组特征具有可复核性。(Zeisel et al., 2015, Science; Tasic et al., 2018, Nature; Siletti et al., 2023, Science)
 - **明确方法依赖：** 解离、核/细胞差异、环境RNA、双细胞、批次校正、聚类及独立生物学重复可显著改变测量与统计解释；QC阈值须按数据类型确认，不能机械套用。(Bakken et al., 2018, PLOS One; Young & Behjati, 2020, GigaScience; Squair et al., 2021, Nat Commun; Ning et al., 2026, BMC Neurosci)
 - **争议或推断：** “一个聚类是否是一种独立生物学类型”、不同细胞型的连续/离散边界、伪时间方向、转录本-蛋白对应和细胞通讯候选均需上下文与独立证据。(La Manno et al., 2018, Nature; Gouwens et al., 2020, Cell; DenAdel et al., 2025, Am J Hum Genet)
 - **不能单凭本法得出：** 特定细胞与哪个神经元形成突触、某个蛋白必然活跃、某条通路对行为具有因果必要性。对应结论需要形态、蛋白、电生理、结构连接与适当扰动研究。(Cadwell et al., 2016, Nat Biotechnol; Moffitt et al., 2018, Science)
-
-**人工验收建议：** 首先审核本节点是否应把snRNA-seq设为独立方法节点（推荐在涉及脑组织取样时另建），并根据Vault实际存在及可发布的目标文件确认双链；然后复核新近2026年Ning等论文的最终发表版本、各项统计口径、重要研究所用的是scRNA还是snRNA。确认文献、细胞类型术语与证据边界无误后，再由人工将审核状态调整并决定是否将`publish: false`更改为`publish: true`。节点及对应03轴的发布/同步均需在Obsidian/Quartz工具中由人工完成，本次仅交付文件，不代表已写入Vault。

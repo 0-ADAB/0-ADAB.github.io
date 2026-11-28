@@ -217,8 +217,6 @@ VIP 特异性 ErbB4 发育干预与 Scn1a-Dravet 细胞特异干预支持某些�
 
 ## 相关节点
 
-> **双链审核状态：** 未取得完整 Obsidian Vault 目录、已存在文件清单和公开状态；以下只列**普通文本的候选关联**，不创建未核实的内部双链，也不暗示已经写入其他节点。
-
 - **同属细胞类型：** PV中间神经元；SST中间神经元；Martinotti细胞；VIP/CR中间神经元；VIP/CCK中间神经元；锥体神经元；海马中间神经元。
 - **分子与递质：** VIP（血管活性肠肽）；GABA；GABA\_A受体；GABA\_B受体；VPAC1/VPAC2受体；PACAP；乙酰胆碱与烟碱型乙酰胆碱受体；5-HT3A受体；Calb2（Calretinin）；CCK；NRG1–ErbB4；SCN1A/Nav1.1。
 - **神经通路与网络：** VIP–SST去抑制微回路；兴奋—抑制平衡；神经调质；皮层反馈通路；运动皮层→躯体感觉皮层；前扣带→视觉皮层；丘脑POm→桶状皮层；海马CA1回路；杏仁核联想学习回路；中央执行网络。
@@ -275,10 +273,4 @@ VIP 特异性 ErbB4 发育干预与 Scn1a-Dravet 细胞特异干预支持某些�
 | (Simacek et al., 2025, Acta Physiol) | Simacek, C. A. et al. (2025) — _Postnatal development of vasoactive intestinal polypeptide-expressing GABAergic interneurons in mouse somatosensory cortex_ | Acta Physiol 241: e14265 | [10.1111/apha.14265](https://doi.org/10.1111/apha.14265) | 原始研究·出生后膜电与突触输入发育 | 小鼠 vS1 的 VIP 细胞膜特性与兴抑输入随年龄变化；不同发育期的 E/I 定义不能任意跨实验比较。 |
 | (Dellal et al., 2025, bioRxiv) | Dellal, S. et al. (2025) — _Inhibitory and disinhibitory VIP IN-mediated circuits in neocortex_ | bioRxiv 2025.02.26.640383 (v2) | [10.1101/2025.02.26.640383](https://doi.org/10.1101/2025.02.26.640383) | 预印本·未经过期刊同行评议 | 小鼠 vS1 VIP/CR、VIP/CCK 等交叉标记分群提示存在直接抑制型与去抑制型；暂不能视为同行评议共识。 |
 
-### 文献核验、待完成事项与发布前审核
-
 - **资料范围：** 经典研究、原创实验、跨方法证据、反例与 2025–2026 年的新近正式发表研究均已在参考表中逐条归档；另保留一篇 **bioRxiv 未同行评议预印本**，不纳入正式实验结论的同等级证据。未发现足以支持“VIP激活在所有脑区恒定提高锥体放电”的普遍因果证据。
-- **文献版本注意：** He 等 2016 年 _Neuron_ 遗传工具论文有后续勘误，建议人工核对期刊说明；同一作品可能有“线上先发表”和“期刊正式卷期”的日期差别，正文和表格采用正式卷期年份（例如 2024 年 _Neuron_ 注意研究、2019 年 _Neuron_ LTP 工作）。
-- **尚未完成：** 未获得 Vault 全目录及节点发布许可状态；未对全部 DOI 链接执行实时 HTTP 逐条连通性测试；未对所有原始实验数据和代码独立重算，也未开展系统评价/元分析或计算统一复制率。相关缺口应在人工审核中保留。
-- **优先人工审核：** ① VIP神经肽与 VIP⁺ GABA 细胞是否区分；② VIP/CR、VIP/CCK 等亚型的分类证据层级；③ 经典 VIP–SST、直接 VIP→锥体和 PV→SST 的连接图谱；④ 2024 年注意正交性反例及 2026 年海马奖励细胞结果；⑤ 预印本、勘误与期刊版本；⑥ 已存在 Obsidian 节点的真实名称、路径与发布状态。
-- **发布安全：** 本稿仍为 `publish: false`、`core: false`、`review_status: needs_review`。由 Vault 维护者人工完成引用、双链与概念核查后，方可决定是否将 `publish` 设为 `true` 并重新同步所属轴及首页。

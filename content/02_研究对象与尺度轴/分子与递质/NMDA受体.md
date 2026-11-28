@@ -1,20 +1,15 @@
 ---
 publish: true
-type: concept
-title: "NMDA受体"
-axis: 研究对象与尺度
-category: "分子与递质"
-core: false
-description: "NMDA受体是由GluN亚基构成的配体门控阳离子通道家族，经典亚型整合谷氨酸、共激动剂和膜电位信息，通过离子流及相关分子信号参与突触可塑性和神经系统疾病。"
 aliases:
-  - "NMDAR"
-  - "N-甲基-D-天冬氨酸受体"
-  - "N-methyl-D-aspartate receptor"
+  - NMDAR
+  - N-甲基-D-天冬氨酸受体
+  - N-methyl-D-aspartate receptor
+title: NMDA受体
+description: NMDA受体是由GluN亚基构成的配体门控阳离子通道家族，经典亚型整合谷氨酸、共激动剂和膜电位信息，通过离子流及相关分子信号参与突触可塑性和神经系统疾病。
+created: 2026-10-15T05:57:50.655Z
 tags:
   - 类型/概念
   - 层/世界
-review_status: needs_review
-agent: "GPT-6"
 ---
 
 # NMDA受体
@@ -194,13 +189,10 @@ Hardingham 与 Bading（2010，Nat Rev Neurosci）的模型将突触内/外 NMDA
 ### 8. 本节点还缺哪些证据？
 
 - 尚未进行严格 PRISMA 系统综述或对 (Collingridge et al., 1983, J Physiol; Nowak et al., 1984, Nature; Mayer et al., 1984, Nature; MacDermott et al., 1986, Nature; Johnson & Ascher, 1987, Nature; Morris et al., 1986, Nature; Moriyoshi et al., 1991, Nature; Monyer et al., 1992, Science; Monyer et al., 1994, Neuron; Chatterton et al., 2002, Nature; Traynelis et al., 2010, Pharmacol Rev; Paoletti et al., 2013, Nat Rev Neurosci; Karakas & Furukawa, 2014, Science; Lee et al., 2014, Nature; Tovar et al., 2013, J Neurosci; Hansen et al., 2014, Neuron; Zhang et al., 2025, Cell; Kang et al., 2025, Neuron; Xu et al., 2026, Nature; Mothet et al., 2000, PNAS; Papouin et al., 2012, Cell; Dudek & Bear, 1992, PNAS; Mulkey & Malenka, 1992, Neuron; Liu et al., 2004, Science; Berberich et al., 2005, J Neurosci; Weitlauf et al., 2005, J Neurosci; Nabavi et al., 2013, PNAS; Babiec et al., 2014, J Neurosci; Stein et al., 2015, J Neurosci; Hardingham & Bading, 2010, Nat Rev Neurosci; Wroge et al., 2012, J Neurosci; Dalmau et al., 2007, Ann Neurol; Dalmau et al., 2008, Lancet Neurol; Hughes et al., 2010, J Neurosci; Endele et al., 2010, Nat Genet; Carvill et al., 2013, Nat Genet; Strehlow et al., 2019, Brain; Reisberg et al., 2003, N Engl J Med; Tariot et al., 2004, JAMA; Zarate et al., 2006, Arch Gen Psychiatry; Popova et al., 2019, Am J Psychiatry; Zarate et al., 2006, Am J Psychiatry; Michalski & Furukawa, 2024, Sci Adv; Hurley et al., 2024, J Neurosci) 每篇论文的原始数据和全部补充资料重新计算，故本稿是**可追溯的知识节点初稿**，而不是已定级的证据系统评价。
-- 不具备真实 Vault 目录和拟发布状态信息，不能断言“AMPA受体”“CaMKII”等既有文件已安装在 Vault，也不能建立未经验证的双链。
 - 对 2025–2026 年天然受体结构，仅将其列为**直接结构观察及作者提出的机制解释**，不推断天然人脑所有亚型的统一丰度。
 - 最新的临床诊断准则、处方适应证、监管批准状态会随地域与年份变化；这里引用研究而不替代临床指南、处方信息或个人医疗建议。
 
 ## 相关节点
-
-> **双链安全说明：** 只收到当前空白节点模板，没有可审计的完整 Obsidian Vault 目录及各节点的拟公开状态。**所有候选名称仅以普通文本列出，不生成 Wikilink**。即使本系列此前已经写过某节点的 Markdown 草稿，也不代表它已经存在于当前 Vault。
 
 - **相邻分子与受体：** AMPA受体、海人酸受体、mGluR、谷氨酸、甘氨酸、D-丝氨酸、GluN1、GluN2A、GluN2B、GluN2C、GluN2D、GluN3A、GluN3B、CaMKII、PSD-95、SynGAP、钙调蛋白、蛋白磷酸酶。
 - **细胞、结构与机制：** 突触后致密区、树突棘、三异源受体、胞外镁离子阻滞、NMDA受体Ca²⁺微域、兴奋性毒性、非离子性NMDAR信号、突触外受体、发育性受体亚基转换。
@@ -262,14 +254,11 @@ Hardingham 与 Bading（2010，Nat Rev Neurosci）的模型将突触内/外 NMDA
 ### 文献勘误与编辑注意
 
 - \*\* MacDermott 等（1986，Nature）\*\* 有期刊勘误记录，精读原文时应检查对应勘误。
+
 - \*\* Popova 等（2019，Am J Psychiatry）\*\* 出版社注明已更正，比较疗效表格及试验方案时需使用更正后的版本。
+
 - \*\* Hurley 等（2024，J Neurosci）\*\* 正式勘误 DOI：[10.1523/JNEUROSCI.2031-24.2024](https://doi.org/10.1523/JNEUROSCI.2031-24.2024)，明确补入  Chatterton 等（2002，Nature）相关引文；属于参考文献更正，不能擅称主要实验撤稿。
+
 - **年份标注：** (Zhang et al., 2025, Cell; Kang et al., 2025, Neuron) 按 2025 年正式卷期、(Xu et al., 2026, Nature) 按 2026 年正式卷期。部分论文线上发表日期早于印刷卷期，网页可自行核实；本稿不将“在线首次发表”和“卷期年份”混作两篇不同研究。
 
-### 节点交付与人工验收
-
-- **建议位置：** `forAccess/02_研究对象与尺度轴/分子与递质/NMDA受体.md`。原因：研究主题主要是具有确定亚基结构与机制的分子受体家族，属于“研究对象与尺度→分子与递质”的 `concept` 类型，而不是独立的临床应用节点。
-- **编辑安全状态：** `type: concept`；`publish: false`；`core: false`；`review_status: needs_review`，均保留为需人工批准的状态。
 - **来源核验范围：** 书目元数据、DOI、摘要和部分开放全文已联网核验；研究的“独立重复”仅在已指出的跨研究与不同方法范围内使用，未声称完成正式系统评价或统计再分析。
-- **未完成／原因：** 没有完整 Vault 文件列表，无法确认同义/同名规范节点是否已经存在，也无法验证候选 Wikilink 的有效性与计划公开状态；没有提供项目专用的 `node tools/检查森林.mjs` 环境，未运行 Vault 级检查；未重算每篇原始研究的实验数据。
-- **人工验收建议：** 首先检查与“NMDA受体 / NMDAR / NR1-NR2”相关的既有规范文件及名称冲突；重点审核(Liu et al., 2004, Science; Berberich et al., 2005, J Neurosci; Weitlauf et al., 2005, J Neurosci; Nabavi et al., 2013, PNAS; Babiec et al., 2014, J Neurosci; Stein et al., 2015, J Neurosci)相互竞争的LTP/LTD结论、(Hardingham & Bading, 2010, Nat Rev Neurosci; Wroge et al., 2012, J Neurosci)位置与毒性边界、(Dalmau et al., 2007, Ann Neurol; Dalmau et al., 2008, Lancet Neurol; Hughes et al., 2010, J Neurosci; Endele et al., 2010, Nat Genet; Carvill et al., 2013, Nat Genet; Strehlow et al., 2019, Brain)人类证据的疾病分型和(Zhang et al., 2025, Cell; Kang et al., 2025, Neuron; Xu et al., 2026, Nature)新结构论文的样本与分析条件；检查全部 DOI 和任何准备新增的相关双链。审核完成后再根据 Vault 规则设置 `publish: true` 和相应的审核状态，然后在 Obsidian/Quartz Syncer 中同步本节点、“研究对象与尺度”轴及需要更新的首页。**本文件尚未写入你的 Obsidian，也没有自动公开或触发网站同步。**
